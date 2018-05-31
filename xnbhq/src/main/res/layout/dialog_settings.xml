@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded_blue"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:text="@string/sys_setting"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/settings_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/background_view_rounded_image"
+            android:contentDescription="@null"
+            android:padding="@dimen/padding_7"
+            android:src="@drawable/ic_close_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0.5dp"
+        android:layout_marginRight="0.5dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_view_rounded"
+                android:padding="10dp"
+                android:text="@string/xsxjlx"
+                android:gravity="center"
+                android:textColor="@color/blue"/>
+
+            <CheckBox
+                android:id="@+id/xsxjlx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="false" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#cbcbcb" />
+
+        <TextView
+            android:id="@+id/version_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_rounded"
+            android:padding="@dimen/padding_10"
+            android:text="@string/versioncheck"
+            android:textColor="@color/blue"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#cbcbcb"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/gpsset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_rounded"
+            android:padding="@dimen/padding_10"
+            android:visibility="gone"
+            android:text="@string/gpssetting"
+            android:textColor="@color/blue"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#cbcbcb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_view_rounded"
+                android:padding="@dimen/padding_10"
+                android:text="GPS采集路线"
+                android:gravity="center"
+                android:textColor="@color/blue"/>
+
+            <CheckBox
+                android:id="@+id/lxcj"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="false" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#cbcbcb" />
+
+        <TextView
+            android:id="@+id/registeruserinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_rounded"
+            android:padding="@dimen/padding_10"
+            android:text="使用者信息注册"
+            android:textColor="@color/blue"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#cbcbcb" />
+
+
+        <TextView
+            android:id="@+id/pop_recordepic"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center|left"
+            android:text="现场信息上报"
+            android:visibility="gone"
+            android:padding="@dimen/padding_10"
+            android:textColor="@color/blue" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#cbcbcb" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

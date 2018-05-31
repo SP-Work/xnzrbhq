@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue" >
+
+        <TextView
+            android:id="@+id/btnreturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/blue_btn_select"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/photograph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/blue_btn_select"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:onClick="takephotop"
+            android:text="拍照"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/ld_see_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/photograph"
+            android:background="@drawable/blue_btn_select"
+            android:gravity="center"
+            android:text="图片浏览"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvxbh"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="唯一号:"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/larger_txtsize20"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/tv_xbh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text=" "
+            android:minWidth="200dp"
+            android:layout_toRightOf="@id/tvxbh"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/larger_txtsize20"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/tvxbarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="长度:"
+            android:textColor="@color/blue"
+            android:layout_toRightOf="@+id/tv_xbh"
+            android:textSize="@dimen/larger_txtsize20"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/tv_xbarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_toRightOf="@+id/tvxbarea"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/larger_txtsize20"
+            android:textStyle="bold" />
+        
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="属性字段"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/larger_txtsize20"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/blue" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="字段值"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/larger_txtsize20"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue" />
+
+    <include layout="@layout/activity_base_edit"/>
+
+</LinearLayout>

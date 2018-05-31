@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:background="@drawable/background_view_rounded_blue"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:paddingLeft="5dp"
+            android:text="@string/addxdm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize20" />
+
+        <ImageView
+            android:id="@+id/xdm_add_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/background_view_rounded_image"
+            android:contentDescription="@null"
+            android:padding="5dp"
+            android:src="@drawable/ic_close_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:padding="10dp"
+            android:paddingLeft="5dp"
+            android:text="@string/xian_80_x"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/larger_txtsize20" />
+
+        <EditText
+            android:id="@+id/xdm_add_x"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="6"
+            android:background="@drawable/background_edittxt"
+            android:gravity="left|center"
+            android:hint=""
+            android:paddingLeft="10dp"
+            android:textColor="@color/balck" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/base_end_color_pressed" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:padding="10dp"
+            android:paddingLeft="5dp"
+            android:text="@string/xian_80_y"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/larger_txtsize20" />
+
+        <EditText
+            android:id="@+id/xdm_add_y"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="6"
+            android:background="@drawable/background_edittxt"
+            android:gravity="left|center"
+            android:hint=""
+            android:paddingLeft="10dp"
+            android:textColor="@color/balck" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/base_end_color_pressed" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:padding="10dp"
+            android:paddingLeft="5dp"
+            android:text="@string/xdm_name"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/larger_txtsize20" />
+
+        <EditText
+            android:id="@+id/xdm_add_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="6"
+            android:background="@drawable/background_edittxt"
+            android:gravity="left|center"
+            android:hint=""
+            android:paddingLeft="10dp"
+            android:textColor="@color/balck" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/base_end_color_pressed" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:padding="10dp"
+            android:paddingLeft="5dp"
+            android:text="@string/xdm_type"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/larger_txtsize20" />
+
+        <Spinner
+            android:id="@+id/xdm_add_type"
+            style="@style/spinner_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="6" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/base_end_color_pressed" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/xdm_add_btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_rounded_blue"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/sure"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/share_navigation"
+        style="@style/imgbutton_style"
+        android:background="@drawable/map_tools_bg"
+        android:contentDescription="@null"
+        android:onClick="navigation"
+        android:src="@drawable/share_map_tools_navigation" />
+
+    <ImageButton
+        android:id="@+id/share_isearch"
+        style="@style/imgbutton_style"
+        android:background="@drawable/map_tools_bg"
+        android:contentDescription="@null"
+        android:onClick="isearche"
+        android:src="@drawable/share_map_tools_isearch" />
+
+    <ImageButton
+        android:id="@+id/share_ceju"
+        style="@style/imgbutton_style"
+        android:background="@drawable/map_tools_bg"
+        android:contentDescription="@null"
+        android:onClick="ceju"
+        android:src="@drawable/share_map_tools_distance" />
+
+    <ImageButton
+        android:id="@+id/share_cemian"
+        style="@style/imgbutton_style"
+        android:background="@drawable/map_tools_bg"
+        android:contentDescription="@null"
+        android:onClick="cemian"
+        android:src="@drawable/share_map_tools_areas" />
+
+    <ImageButton
+        android:id="@+id/share_clean"
+        style="@style/imgbutton_style"
+        android:background="@drawable/map_tools_bg"
+        android:contentDescription="@null"
+        android:onClick="clean"
+        android:src="@drawable/share_map_tools_clean" />
+
+    <ImageButton
+        android:id="@+id/share_mylocation"
+        style="@style/imgbutton_style"
+        android:background="@drawable/map_tools_bg"
+        android:contentDescription="@null"
+        android:layout_marginBottom="10dp"
+        android:onClick="mylocation"
+        android:src="@drawable/share_map_tools_dw" />
+
+</LinearLayout>

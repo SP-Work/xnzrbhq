@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/background_view_rounded" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/background_view_rounded_blue"
+            android:gravity="center"
+            android:padding="13dp" >
+
+            <TextView
+                android:id="@+id/editlonlat_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="15dp"
+                android:background="@drawable/background_view_rounded_lightblue"
+                android:gravity="center"
+                android:padding="15dp"
+                android:paddingLeft="5dp"
+                android:text="@string/back"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/larger_txtsize20" />
+
+            <TextView
+                android:id="@+id/textView_two_lonlat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/larger_txtsize20" />
+
+            <TextView
+                android:id="@+id/editlonlat_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="15dp"
+                android:background="@drawable/background_view_rounded_lightblue"
+                android:gravity="center"
+                android:padding="15dp"
+                android:paddingLeft="5dp"
+                android:text="@string/sure"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/larger_txtsize20" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="经度:"
+                android:textColor="@color/balck"
+                android:textSize="@dimen/larger_txtsize22" />
+
+            <TextView
+                android:id="@+id/edittxt_input_lon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/larger_txtsize20" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="纬度:"
+                android:textColor="@color/balck"
+                android:textSize="@dimen/larger_txtsize22" />
+
+            <TextView
+                android:id="@+id/edittxt_input_lat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/larger_txtsize20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="X:"
+                android:textColor="@color/balck"
+                android:textSize="@dimen/larger_txtsize22" />
+
+            <TextView
+                android:id="@+id/edittxt_input_x"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/larger_txtsize20" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Y:"
+                android:textColor="@color/balck"
+                android:textSize="@dimen/larger_txtsize22" />
+
+            <TextView
+                android:id="@+id/edittxt_input_y"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/larger_txtsize20" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

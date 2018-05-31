@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvline"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        android:text="tvline" />
+    
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/blue" />
+
+    <TextView
+        android:id="@+id/etLine_1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:textSize="@dimen/larger_txtsize20"
+        android:textColor="#000000"
+        android:singleLine="true"
+        android:paddingLeft="5dp"
+        android:hint=""
+        android:focusable="true"/>
+
+</LinearLayout>

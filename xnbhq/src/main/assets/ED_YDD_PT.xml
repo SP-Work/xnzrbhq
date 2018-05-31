@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 二调样地点属性字段 -->
+<root>
+    <!-- 1:选择类型字段 2:数字类型 3：文字类型 4：日期选择 -->
+    <!-- 不显示的字段 -->
+    <dic tablename="keyout">
+
+        <!--   <row id="520102" name="南明区"/>
+          <row id="520103" name="云岩区"/>
+          <row id="520111" name="花溪区"/>
+          <row id="520112" name="乌当区"/> -->
+    </dic>
+    <!-- 计算项 -->
+    <dic tablename="calculate">
+        <row name="XBZS" id="1" />
+    </dic>
+    <!-- 无需编辑的字段 -->
+    <dic tablename="notedite">
+        <row name="DJH" id="1" />
+        <row name="SHENG" id="1" />
+        <row name="省代码" id="1" />
+        <row name="SHENG_DM" id="1" />
+        <row name="地籍号" id="1" />
+        <row name="宗地地籍号" id="1" />
+        <row name="小班号" id="1" />
+    </dic>
+
+
+    <!-- 样地号 -->
+    <dic tablename="YDH" type="2"></dic>
+    <!-- 地形图图符号-->
+    <dic tablename="DXTTFH" type="2">
+
+    </dic>
+    <!-- 图面横坐标-->
+    <dic tablename="TMHZB" type="2">
+
+    </dic>
+    <!-- 图面纵坐标-->
+    <dic tablename="TMZZB" type="2">
+
+    </dic>
+    <!-- 县-->
+    <dic tablename="XIAN" type="1">
+        <row name="南明区" id="520102" />
+        <row name="云岩区" id="520103" />
+        <row name="花溪区" id="520111" />
+        <row name="乌当区" id="520112" />
+        <row name="白云区" id="520113" />
+        <row name="观山湖区" id="520114" />
+        <row name="经济技术开发区" id="520116" />
+        <row name="开阳县" id="520121" />
+        <row name="息烽县" id="520122" />
+        <row name="修文县" id="520123" />
+        <row name="清镇市" id="520181" />
+    </dic>
+    <!-- 乡-->
+    <dic tablename="XIANG" type="1">
+
+    </dic>
+    <!-- 村-->
+    <dic tablename="CUN" type="1"></dic>
+    <!-- 林班号-->
+    <dic tablename="LBH" type="2">
+
+    </dic>
+    <!-- 小班号-->
+    <dic tablename="XBH" type="2">
+
+    </dic>
+    <!-- 定位横坐标-->
+    <dic tablename="DWHZB" type="3"></dic>
+    <!-- 定位纵坐标-->
+    <dic tablename="DWZZB" type="3"></dic>
+    <!-- 样地类别-->
+    <dic tablename="YDLB" type="1">
+        <row name="实测样地" id="1" />
+        <row name="目测样地" id="2" />
+    </dic>
+    <!-- 优势地类比例-->
+    <dic tablename="YDLB" type="2"></dic>
+    <!-- 海拔-->
+    <dic tablename="HAIBA" type="2"></dic>
+    <!--地貌-->
+    <dic tablename="DIMAO" type="1">
+        <row name="中山" id="30" />
+        <row name="低中山" id="31" />
+        <row name="中中山" id="32" />
+        <row name="高中山" id="33" />
+        <row name="低山" id="40" />
+        <row name="丘陵" id="50" />
+        <row name="其他地貌" id="70" />
+    </dic>
+    <!--坡位-->
+    <dic tablename="POWEI" type="1">
+        <row name="脊部" id="1" />
+        <row name="上部" id="2" />
+        <row name="中部" id="3" />
+        <row name="下部" id="4" />
+        <row name="谷部" id="5" />
+        <row name="平地" id="6" />
+        <row name="全坡位" id="7" />
+    </dic>
+    <!--坡度-->
+    <dic tablename="PODU" type="1">
+        <row name="0~5°" id="1" />
+        <row name="6~15°" id="2" />
+        <row name="16~25°" id="3" />
+        <row name="26~35°" id="4" />
+        <row name="36~45°" id="5" />
+        <row name="46°以上" id="6" />
+    </dic>
+    <!--坡向-->
+    <dic tablename="POXIANG" type="1">
+        <row name="北" id="1" />
+        <row name="东北" id="2" />
+        <row name="东" id="3" />
+        <row name="东南" id="4" />
+        <row name="南" id="5" />
+        <row name="西南" id="6" />
+        <row name="西" id="7" />
+        <row name="西北" id="8" />
+        <row name="无坡向" id="9" />
+    </dic>
+    <!--土壤母质-->
+    <dic tablename="TRMZ" type="1">
+        <row name="岩浆岩" id="100" />
+        <row name="花岗岩" id="101" />
+        <row name="玄武岩" id="102" />
+
+        <row name="沉积岩" id="200" />
+        <row name="砂岩" id="201" />
+        <row name="砾岩" id="202" />
+        <row name="页岩" id="203" />
+        <row name="紫色岩" id="204" />
+        <row name="紫色页岩" id="205" />
+        <row name="紫色砂页岩" id="206" />
+        <row name="泥质岩" id="207" />
+        <row name="石灰岩" id="208" />
+        <row name="白云岩" id="209" />
+        <row name="石英砂岩" id="210" />
+        <row name="红砂岩" id="211" />
+        <row name="砂页岩" id="212" />
+        <row name="沙页岩" id="213" />
+        <row name="砂砾岩" id="214" />
+        <row name="煤系砂页岩" id="215" />
+
+        <row name="变质岩" id="300" />
+        <row name="板岩" id="301" />
+        <row name="片岩" id="302" />
+        <row name="板页岩" id="303" />
+        <row name="片麻岩" id="304" />
+
+        <row name="第四纪松散堆积物" id="400" />
+        <row name="第四纪红土" id="401" />
+        <row name="冲击母质" id="402" />
+
+    </dic>
+    <!-- 土壤名称 -->
+    <dic tablename="TRMC" type="1">
+        <row name="铁铝土纲" id="1000" />
+        <row name="红壤" id="1003" />
+        <row name="黄壤" id="1004" />
+        <row name="淋溶土纲" id="1100" />
+        <row name="黄棕壤" id="1101" />
+        <row name="棕壤" id="1102" />
+        <row name="水成土纲" id="1500" />
+        <row name="沼泽土" id="1501" />
+        <row name="水稻土" id="1502" />
+        <row name="泥炭土" id="1503" />
+        <row name="半水成土纲" id="1600" />
+        <row name="潮土" id="1603" />
+        <row name="山地草甸土" id="1607" />
+        <row name="初育土纲" id="1800" />
+        <row name="紫色土" id="1801" />
+        <row name="石灰土" id="1802" />
+        <row name="石质土" id="1807" />
+        <row name="粗骨土" id="1808" />
+        <row name="红粘土" id="1809" />
+        <row name="新积土" id="1810" />
+    </dic>
+    <!-- 土层厚度 -->
+    <dic tablename="TCHD" type="1">
+        <row name="厚层土" id="≥80㎝" />
+        <row name="中层土" id="40-70㎝" />
+        <row name="薄层土" id="＜40㎝" />
+    </dic>
+    <!-- 二调地类 -->
+    <dic tablename="DILEI" type="1">
+        <row name="乔木林地" id="1110" />
+        <row name="特殊灌木林地" id="1310" />
+        <row name="一般灌木林地" id="1320" />
+        <row name="竹林地" id="1130" />
+        <row name="疏林地" id="1200" />
+        <row name="未成林造林地" id="1410" />
+        <row name="苗圃地" id="1500" />
+        <row name="采伐迹地" id="1610" />
+        <row name="火烧迹地" id="1620" />
+        <row name="其他迹地" id="1630" />
+        <row name="造林失败地" id="1710" />
+        <row name="规划造林地" id="1720" />
+        <row name="其它宜林地" id="1730" />
+        <row name="非林地" id="2000" />
+        <row name="耕地" id="2100" />
+        <row name="牧草地" id="2200" />
+        <row name="水域" id="2300" />
+        <row name="未利用地" id="2400" />
+        <row name="工矿建设用地" id="2510" />
+        <row name="城乡居民建设用地" id="2520" />
+        <row name="交通建设用地" id="2530" />
+        <row name="其他用地" id="2540" />
+    </dic>
+    <!-- 林种-->
+    <dic tablename="LINZHONG" type="1">
+        <row name="生态公益林" id="100" />
+        <row name="防护林" id="110" />
+        <row name="水源涵养林" id="111" />
+        <row name="水土保持林" id="112" />
+        <row name="防风固沙林" id="113" />
+        <row name="农田牧地防护林" id="114" />
+        <row name="护岸林" id="115" />
+        <row name="护路林" id="116" />
+        <row name="其他防护林" id="117" />
+        <row name="特种用途林" id="120" />
+        <row name="国防林" id="121" />
+        <row name="实验林" id="122" />
+        <row name="母树林" id="123" />
+        <row name="环境保护林" id="124" />
+        <row name="风景林" id="125" />
+        <row name="名胜古迹和革命纪念林" id="126" />
+        <row name="自然保护林" id="127" />
+        <row name="商品林" id="200" />
+        <row name="用材林" id="230" />
+        <row name="短轮伐期用材林" id="231" />
+        <row name="速生丰产用材林" id="232" />
+        <row name="一般用材林" id="233" />
+        <row name="薪炭林" id="240" />
+        <row name="经济林" id="250" />
+        <row name="果树林" id="251" />
+        <row name="食用原料林" id="252" />
+        <row name="林业工业原料林" id="253" />
+        <row name="药用林" id="254" />
+        <row name="其他经济林" id="255" />
+    </dic>
+    <!-- 优势树种（组） -->
+    <dic tablename="YSSZ" type="1">
+
+    </dic>
+    <!-- 树种组成-->
+    <dic tablename="SZZC" type="2">
+
+    </dic>
+    <!-- 起源 -->
+    <dic tablename="QIYUAN" type="1">
+        <row name="天然" id="10" />
+        <row name="纯天然" id="11" />
+        <row name="人工促进" id="12" />
+        <row name="萌生天然林" id="13" />
+        <row name="人工" id="20" />
+        <row name="植苗" id="21" />
+        <row name="飞播" id="23" />
+        <row name="萌生人工林" id="24" />
+    </dic>
+    <!-- 起源 -->
+    <dic tablename="YBD" type="2"></dic>
+    <!-- 灌木覆盖度 -->
+    <dic tablename="GMFGD" type="2">
+
+    </dic>
+    <!-- 草本覆盖度 -->
+    <dic tablename="GBFGD" type="2">
+
+    </dic>
+    <!-- 平均年龄-->
+    <dic tablename="PJNL" type="2">
+
+    </dic>
+    <!-- 龄组 -->
+    <dic tablename="LINGZU" type="1">
+        <row name="幼龄林(产前期)" id="1" />
+        <row name="中龄林(初产期)" id="2" />
+        <row name="近熟林" id="3" />
+        <row name="成熟林(盛产期)" id="4" />
+        <row name="过熟林(衰产期)" id="5" />
+    </dic>
+    <!-- 林层结构 -->
+    <dic tablename="LINCENG" type="1">
+        <row name="样地林层" id="10" />
+        <row name="单层林" id="11" />
+        <row name="复层林" id="12" />
+        <row name="样木林层" id="20" />
+        <row name="单层林" id="21" />
+        <row name="复层林主林层" id="22" />
+        <row name="复层林次林层" id="23" />
+    </dic>
+    <!-- 植被综合盖度 -->
+    <dic tablename="ZBZHGD" type="2">
+
+    </dic>
+    <!-- 基岩名称-->
+    <dic tablename="JYMC" type="1"></dic>
+    <!-- 基岩裸露率-->
+    <dic tablename="JYLUL" type="2"></dic>
+    <!-- 样木分布-->
+    <dic tablename="YMFB" type="2">
+        <row name="均匀分布" id="1" />
+        <row name="随机分布" id="2" />
+        <row name="集群分布" id="1" />
+        <row name="跨角分布" id="2" />
+    </dic>
+    <!-- 工组长-->
+    <dic tablename="GZZ" type="3"></dic>
+    <!-- 其他调查人员-->
+    <dic tablename="QTDCRY" type="3"></dic>
+    <!-- 调查时间-->
+    <dic tablename="DCSJ" type="4"></dic>
+    <!-- 技术指导-->
+    <dic tablename="JSZD" type="3"></dic>
+    <!-- 检查人员-->
+    <dic tablename="JCRY" type="3"></dic>
+    <!-- 检查时间-->
+    <dic tablename="JCSJ" type="4"></dic>
+    <!-- 四旁树（竹）株数-->
+    <dic tablename="SPSZS" type="2"></dic>
+    <!-- 备注数-->
+    <dic tablename="BEIZHU" type="3"></dic>
+    <!-- 样地相片编号-->
+    <dic tablename="YDXPBH" type="3"></dic>
+    <!-- 优势树种-->
+    <dic tablename="YSSZ" type="1">
+        <row name="针叶树种(组)" id="100000" />
+        <row name="冷杉类" id="110200" />
+        <row name="冷杉" id="110201" />
+        <row name="梵净山冷杉" id="110205" />
+        <row name="云杉类" id="110300" />
+        <row name="云杉" id="110301" />
+        <row name="秃杉" id="110318" />
+        <row name="红豆杉" id="110319" />
+        <row name="南方红豆杉" id="110320" />
+        <row name="云南红豆杉" id="110321" />
+        <row name="松类" id="110400" />
+        <row name="华山松" id="110405" />
+        <row name="马尾松" id="110401" />
+        <row name="云南松" id="110411" />
+        <row name="细叶云南松" id="110424" />
+        <row name="思茅松" id="110412" />
+        <row name="高山松" id="110413" />
+        <row name="海南五针松（葵花松）" id="110420" />
+        <row name="华南五针松" id="110421" />
+        <row name="大明松" id="110422" />
+        <row name="油松" id="110410" />
+        <row name="白皮松" id="110423" />
+        <row name="黄山松" id="110402" />
+        <row name="国外松" id="110500" />
+        <row name="湿地松" id="110501" />
+        <row name="火炬松" id="110502" />
+        <row name="加勒比松" id="110503" />
+        <row name="铁杉油杉类" id="110600" />
+        <row name="铁杉" id="110601" />
+        <row name="长苞铁杉" id="110624" />
+        <row name="油杉" id="110604" />
+        <row name="铁坚油杉" id="110625" />
+        <row name="三尖杉" id="110603" />
+        <row name="高山三尖杉" id="110617" />
+        <row name="绿背三尖杉" id="110618" />
+        <row name="篦子三尖杉" id="110605" />
+        <row name="粗榧" id="110619" />
+        <row name="宽叶粗榧" id="110620" />
+        <row name="百日青" id="110621" />
+        <row name="竹柏" id="110622" />
+        <row name="黄杉" id="110623" />
+        <row name="柏类" id="110700" />
+        <row name="柏木" id="110704" />
+        <row name="岷江柏木" id="110721" />
+        <row name="刺柏" id="110709" />
+        <row name="圆柏" id="110702" />
+        <row name="侧柏" id="110701" />
+        <row name="滇柏" id="110718" />
+        <row name="干香柏" id="110719" />
+        <row name="福建柏" id="110703" />
+        <row name="翠柏" id="110720" />
+        <row name="高山柏" id="110714" />
+        <row name="杉类" id="110800" />
+        <row name="杉木" id="110801" />
+        <row name="柳杉" id="110802" />
+        <row name="三杉类" id="110900" />
+        <row name="水杉" id="110901" />
+        <row name="池杉" id="110902" />
+        <row name="落羽杉" id="110903" />
+        <row name="银杉" id="110904" />
+        <row name="水松" id="110905" />
+        <row name="其它杉类" id="111000" />
+        <row name="针叶其它树种（组）" id="120000" />
+        <row name="针叶混交树种组" id="120100" />
+        <row name="针叶阔叶混交树种组" id="130000" />
+        <row name="阔叶树种（组）" id="200000" />
+        <row name="杨类" id="200100" />
+        <row name="响叶杨" id="200103" />
+        <row name="大叶杨" id="200120" />
+        <row name="滇杨" id="200119" />
+        <row name="山杨" id="200105" />
+        <row name="钻天杨" id="200101" />
+        <row name="柳类" id="200200" />
+        <row name="桉类" id="200300" />
+        <row name="樟类" id="200400" />
+        <row name="香樟" id="200401" />
+        <row name="尾叶樟" id="200411" />
+        <row name="猴樟" id="200412" />
+        <row name="云南樟" id="200404" />
+        <row name="厚壳桂" id="200407" />
+        <row name="香桂" id="200408" />
+        <row name="川桂" id="200413" />
+        <row name="少花桂" id="200414" />
+        <row name="楠类" id="200500" />
+        <row name="紫楠" id="200509" />
+        <row name="峨眉紫楠" id="200510" />
+        <row name="白楠" id="200511" />
+        <row name="闽楠" id="200501" />
+        <row name="石山楠" id="200512" />
+        <row name="竹叶楠" id="200513" />
+        <row name="光枝楠" id="200514" />
+        <row name="楠木" id="200515" />
+        <row name="栎柯类" id="200600" />
+        <row name="麻栎" id="200602" />
+        <row name="白栎" id="200606" />
+        <row name="槲栎" id="200603" />
+        <row name="锐齿槲栎" id="200626" />
+        <row name="巴东栎" id="200612" />
+        <row name="乌冈栎" id="200613" />
+        <row name="岩栎" id="200614" />
+        <row name="黄山栎" id="200627" />
+        <row name="密脉石栎" id="200615" />
+        <row name="凯里石栎" id="200616" />
+        <row name="包石栎" id="200617" />
+        <row name="厚斗石栎" id="200618" />
+        <row name="白皮石栎" id="200619" />
+        <row name="石栎" id="200607" />
+        <row name="大叶石栎" id="200620" />
+        <row name="皱叶石栎" id="200621" />
+        <row name="岭南石栎" id="200622" />
+        <row name="硬斗石栎" id="200623" />
+        <row name="灰石栎" id="200624" />
+        <row name="多穗石栎" id="200625" />
+        <row name="榆类" id="200700" />
+        <row name="朴树" id="200707" />
+        <row name="檀类" id="201000" />
+        <row name="青檀" id="201002" />
+        <row name="桦类" id="201100" />
+        <row name="白桦" id="201101" />
+        <row name="亮叶桦" id="201109" />
+        <row name="华南桦" id="201114" />
+        <row name="香桦" id="201108" />
+        <row name="椴类" id="201200" />
+        <row name="椴树" id="201204" />
+        <row name="纤椴" id="201205" />
+        <row name="黔椴" id="201206" />
+        <row name="窄苞椴" id="201207" />
+        <row name="黄毛椴" id="201208" />
+        <row name="桐类" id="201400" />
+        <row name="梧桐" id="201401" />
+        <row name="泡桐" id="201406" />
+        <row name="刺槐类" id="201500" />
+        <row name="刺槐" id="201501" />
+        <row name="槐" id="201502" />
+        <row name="栲类" id="201600" />
+        <row name="刺栲" id="201603" />
+        <row name="西南米槠" id="201604" />
+        <row name="钩栲" id="201605" />
+        <row name="丝栗栲" id="201606" />
+        <row name="贵州栲" id="201607" />
+        <row name="元江栲" id="201608" />
+        <row name="厚皮栲" id="201609" />
+        <row name="峨眉栲" id="201602" />
+        <row name="甜槠栲" id="201610" />
+        <row name="罗浮栲" id="201611" />
+        <row name="槭类" id="201800" />
+        <row name="色木槭" id="201801" />
+        <row name="扇叶槭" id="201808" />
+        <row name="元宝槭" id="201809" />
+        <row name="楝类" id="201900" />
+        <row name="楝" id="201901" />
+        <row name="香椿" id="201904" />
+        <row name="红椿" id="201905" />
+        <row name="川楝" id="201906" />
+        <row name="滇红椿" id="201907" />
+        <row name="毛红椿" id="201908" />
+        <row name="麻楝" id="201909" />
+        <row name="臭椿" id="201910" />
+        <row name="珙桐类" id="202100" />
+        <row name="珙桐" id="202101" />
+        <row name="青冈类" id="202200" />
+        <row name="毛枝青冈" id="202201" />
+        <row name="毛果青冈（红青冈）" id="202202" />
+        <row name="大叶青冈" id="202203" />
+        <row name="窄叶青冈" id="202204" />
+        <row name="云山青冈" id="202205" />
+        <row name="滇青冈" id="202206" />
+        <row name="黄毛青冈（西南青冈）" id="202207" />
+        <row name="毛曼青冈（毛蛮青冈）" id="202209" />
+        <row name="青冈" id="202210" />
+        <row name="小叶青冈" id="202211" />
+        <row name="细叶青冈" id="202212" />
+        <row name="福建青冈" id="202213" />
+        <row name="水青冈类" id="202300" />
+        <row name="水青冈" id="202301" />
+        <row name="米心水青冈" id="202302" />
+        <row name="光叶水青冈（亮叶水青冈）" id="202303" />
+        <row name="阔叶其它树种（组）" id="700000" />
+        <row name="阔叶混交树种组" id="700100" />
+        <row name="杂木" id="700200" />
+        <row name="灯台树" id="700202" />
+        <row name="梓木" id="700204" />
+        <row name="红豆树" id="700211" />
+        <row name="楸树" id="700212" />
+        <row name="蕈树" id="700213" />
+        <row name="异叶梁王茶" id="700214" />
+        <row name="掌叶梁王茶" id="700215" />
+        <row name="鹅掌柴" id="700216" />
+        <row name="楤木" id="700217" />
+        <row name="三球悬铃木（法国梧桐）" id="700218" />
+        <row name="锥栗" id="700219" />
+        <row name="黑荆" id="700220" />
+        <row name="女贞" id="800002" />
+        <row name="喜树" id="800003" />
+        <row name="木荷" id="800004" />
+        <row name="柞木" id="800010" />
+        <row name="枫香树" id="800011" />
+        <row name="檫木" id="800012" />
+        <row name="桤木" id="800013" />
+        <row name="枫杨" id="800015" />
+        <row name="合欢" id="800017" />
+        <row name="黄连木" id="800022" />
+        <row name="构树" id="800024" />
+        <row name="重阳木" id="800026" />
+        <row name="伯乐树" id="800027" />
+        <row name="栾树" id="800028" />
+        <row name="冬青" id="800029" />
+        <row name="木棉" id="800030" />
+        <row name="皂荚" id="800033" />
+        <row name="刺楸" id="800035" />
+        <row name="连香树" id="800037" />
+        <row name="香果树" id="800038" />
+        <row name="鹅掌楸" id="800039" />
+        <row name="白辛树" id="800040" />
+        <row name="水青树" id="800041" />
+        <row name="川滇桤木" id="800049" />
+        <row name="尼泊尔桤木（旱冬瓜）" id="800050" />
+        <row name="香合欢" id="800051" />
+        <row name="滇合欢" id="800052" />
+        <row name="秋枫" id="800053" />
+        <row name="云贵鹅耳枥" id="800054" />
+        <row name="肥牛树" id="800050" />
+        <row name="翅荚香槐" id="800051" />
+        <row name="南岭黄檀" id="800052" />
+        <row name="黄檀" id="800053" />
+        <row name="杜英" id="800054" />
+        <row name="格木" id="800055" />
+        <row name="马蹄荷" id="800056" />
+        <row name="山桐子" id="800057" />
+        <row name="余甘子" id="800059" />
+        <row name="圆果化香树" id="800060" />
+        <row name="菜豆树" id="800061" />
+        <row name="榧树" id="800062" />
+        <row name="观光木" id="800063" />
+        <row name="任豆" id="800064" />
+        <row name="楮" id="800065" />
+        <row name="其它硬阔树种组" id="810000" />
+        <row name="其它软阔树种组" id="820000" />
+        <row name="特殊树种（组）" id="900000" />
+        <row name="竹林树种（组）" id="910000" />
+        <row name="毛竹" id="910100" />
+        <row name="杂竹" id="910200" />
+        <row name="绒毛赤竹" id="910226" />
+        <row name="箬竹" id="910218" />
+        <row name="金佛山箬竹" id="910227" />
+        <row name="阔叶箬竹" id="910228" />
+        <row name="多毛箬竹" id="910229" />
+        <row name="光叶箬竹" id="910230" />
+        <row name="龙头竹" id="910231" />
+        <row name="单枝玉山竹" id="910232" />
+        <row name="早园竹" id="910233" />
+        <row name="人面竹" id="910234" />
+        <row name="毛环竹" id="910235" />
+        <row name="黄古竹" id="910207" />
+        <row name="斑竹" id="910213" />
+        <row name="红边竹" id="910236" />
+        <row name="花竹" id="910237" />
+        <row name="紫竹" id="910210" />
+        <row name="贵州刚竹" id="910238" />
+        <row name="水竹" id="910209" />
+        <row name="毛环方竹" id="910239" />
+        <row name="乳纹方竹" id="910240" />
+        <row name="方竹" id="910217" />
+        <row name="狭叶方竹" id="910241" />
+        <row name="金佛山方竹" id="910242" />
+        <row name="平竹" id="910243" />
+        <row name="中华大节竹" id="910244" />
+        <row name="凤竹" id="910245" />
+        <row name="镰序竹" id="910246" />
+        <row name="爬竹" id="910247" />
+        <row name="粉单竹" id="910248" />
+        <row name="硬头黄" id="910249" />
+        <row name="慈竹" id="910212" />
+        <row name="车筒竹" id="910250" />
+        <row name="料慈竹" id="910251" />
+        <row name="麻竹" id="910224" />
+        <row name="笼笼竹" id="910252" />
+        <row name="箭秆竹" id="910253" />
+        <row name="苦竹" id="910254" />
+        <row name="金竹" id="910255" />
+        <row name="梁山慈" id="910256" />
+        <row name="混生型竹林" id="910300" />
+        <row name="果树类" id="920100" />
+        <row name="柑橘类" id="920101" />
+        <row name="苹果" id="920102" />
+        <row name="梨" id="920103" />
+        <row name="桃" id="920104" />
+        <row name="李" id="920105" />
+        <row name="杏" id="920106" />
+        <row name="枣*" id="920107" />
+        <row name="柿*" id="920109" />
+        <row name="胡桃（核桃）*" id="920110" />
+        <row name="栗（板栗）*" id="920111" />
+        <row name="荔枝" id="920113" />
+        <row name="龙眼" id="920114" />
+        <row name="杨梅" id="920117" />
+        <row name="柚橙类" id="920118" />
+        <row name="枇杷" id="920119" />
+        <row name="猕猴桃" id="920120" />
+        <row name="葡萄" id="920124" />
+        <row name="樱桃" id="920125" />
+        <row name="石榴" id="920129" />
+        <row name="君迁子（黑枣）" id="920130" />
+        <row name="缫丝花（刺梨）" id="920134" />
+        <row name="食用原料类" id="920200" />
+        <row name="油茶" id="920201" />
+        <row name="木犀榄（油橄榄）" id="920202" />
+        <row name="茶" id="920205" />
+        <row name="粗壮女贞（苦丁茶）" id="920214" />
+        <row name="花椒" id="920208" />
+        <row name="八角" id="920209" />
+        <row name="肉桂" id="920210" />
+        <row name="木犀（桂花）" id="920211" />
+        <row name="药材类" id="920300" />
+        <row name="杜仲*" id="920301" />
+        <row name="厚朴*" id="920302" />
+        <row name="枸杞" id="920303" />
+        <row name="银杏*" id="920304" />
+        <row name="黄檗（黄柏）*" id="920305" />
+        <row name="盐肤木（五倍子）" id="920306" />
+        <row name="忍冬（金银花）" id="920307" />
+        <row name="吴茱萸" id="920311" />
+        <row name="林化工业原料类" id="920400" />
+        <row name="漆树*" id="920401" />
+        <row name="油桐" id="920403" />
+        <row name="木油桐" id="920412" />
+        <row name="乌桕*" id="920404" />
+        <row name="棕榈" id="920405" />
+        <row name="橡胶树" id="920406" />
+        <row name="栓皮栎*" id="920408" />
+        <row name="山鸡椒（山苍子）" id="920409" />
+        <row name="栀子" id="920411" />
+        <row name="其它经济类" id="920500" />
+        <row name="桑" id="920501" />
+        <row name="蚕柞" id="920502" />
+        <row name="灌木林树种（组）" id="940000" />
+        <row name="小檗" id="940005" />
+        <row name="杜鹃" id="940006" />
+        <row name="长蕊杜鹃" id="940138" />
+        <row name="多花杜鹃" id="940139" />
+        <row name="小花杜鹃" id="940140" />
+        <row name="亮叶杜鹃" id="940141" />
+        <row name="溪畔杜鹃" id="940142" />
+        <row name="毛果杜鹃" id="940143" />
+        <row name="百合花杜鹃" id="940144" />
+        <row name="栎灌" id="940111" />
+        <row name="桃金娘" id="940007" />
+        <row name="珍珠花（南烛）" id="940145" />
+        <row name="狭叶珍珠花（狭叶南烛）" id="940146" />
+        <row name="小果珍珠花（小果南烛）" id="940147" />
+        <row name="美丽马醉木" id="940148" />
+        <row name="白珠树" id="940149" />
+        <row name="滇白珠" id="940150" />
+        <row name="南烛（乌饭树）" id="940151" />
+        <row name="苍山越桔" id="940152" />
+        <row name="黄背越桔" id="940153" />
+        <row name="杜茎山" id="940154" />
+        <row name="月月红（江南紫金牛）" id="940155" />
+        <row name="铁仔" id="940156" />
+        <row name="火棘" id="940082" />
+        <row name="马桑" id="940080" />
+        <row name="贵州毛柃" id="940157" />
+        <row name="半齿柃" id="940158" />
+        <row name="钝叶柃" id="940159" />
+        <row name="细枝柃" id="940160" />
+        <row name="细齿叶柃木" id="940161" />
+        <row name="南天竹" id="940162" />
+        <row name="金丝桃" id="940163" />
+        <row name="绣线菊" id="940024" />
+        <row name="茅栗" id="940164" />
+        <row name="勾儿茶" id="940165" />
+        <row name="多叶勾儿茶" id="940166" />
+        <row name="多花勾儿茶" id="940167" />
+        <row name="光轴勾儿茶" id="940168" />
+        <row name="冬青叶鼠刺(月月青）" id="940169" />
+        <row name="滇鼠刺" id="940170" />
+        <row name="西南绣球" id="940171" />
+        <row name="檵木" id="940035" />
+        <row name="水柏枝类" id="940008" />
+        <row name="松灌" id="940009" />
+        <row name="竹灌" id="940010" />
+        <row name="箭竹" id="940172" />
+        <row name="冷箭竹" id="940173" />
+        <row name="金合欢" id="940174" />
+        <row name="土蜜树" id="940175" />
+        <row name="山矾" id="940059" />
+        <row name="胡颓子" id="940055" />
+        <row name="胡枝子" id="940019" />
+        <row name="含笑" id="940067" />
+        <row name="白刺花" id="940176" />
+        <row name="车桑子" id="940177" />
+        <row name="草本" id="970000" />
+        <row name="金茅" id="970001" />
+        <row name="白茅" id="970002" />
+        <row name="黄茅" id="970003" />
+        <row name="蒲公英" id="970004" />
+        <row name="地果" id="970005" />
+        <row name="蕨" id="970006" />
+        <row name="铁芒萁" id="970007" />
+    </dic>
+
+
+</root>

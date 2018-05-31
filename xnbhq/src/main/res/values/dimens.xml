@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="key_height">50.0dip</dimen>
+    <dimen name="dimin_80">80dp</dimen>
+    <dimen name="dimin_100">100dp</dimen>
+    <dimen name="dimin_120">120dp</dimen>
+    <dimen name="dimin_240">240dp</dimen>
+    <dimen name="dimin_360">360dp</dimen>
+    <dimen name="dimin_480">480dp</dimen>
+    <dimen name="dimin_840">840dp</dimen>
+    <dimen name="dimin_960">960dp</dimen>
+    <dimen name="dimin_600">600dp</dimen>
+    <dimen name="dimin_1200">1200dp</dimen>
+    <dimen name="dimin_2280">2280dp</dimen>
+    <dimen name="dimin_1440">1440dp</dimen>
+    <dimen name="dimin_1560">1560dp</dimen>
+    <dimen name="dimin_3000">2640dp</dimen>
+    <dimen name="dimin_60">45dp</dimen>
+    <dimen name="dimin_720">840dp</dimen>
+    <dimen name="dimin_1680">1680dp</dimen>
+    
+    <dimen name="lockscreen_color_icon_size">34dip</dimen>
+    <dimen name="lockscreen_color_icon_marger">2dip</dimen>
+    <dimen name="lockscreen_color_icon_marger_bottom">2dip</dimen>
+    <dimen name="larger_txtsize22">22sp</dimen>
+    <dimen name="larger_txtsize20">20sp</dimen>
+    <dimen name="larger_txtsize18">18sp</dimen>
+    <dimen name="larger_txtsize16">16sp</dimen>
+    <dimen name="larger_txtsize14">14sp</dimen>
+    
+    <dimen name="slidemenu_right_width">100dp</dimen>
+
+    <dimen name="btn_circle">24dp</dimen>
+
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../LibraryManager/LibraryManager.iml" filepath="$PROJECT_DIR$/../LibraryManager/LibraryManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../LibraryManager/baselibrary/baselibrary.iml" filepath="$PROJECT_DIR$/../LibraryManager/baselibrary/baselibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../LibraryManager/photopicker/photopicker.iml" filepath="$PROJECT_DIR$/../LibraryManager/photopicker/photopicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../LibraryManager/proj4android/proj4android.iml" filepath="$PROJECT_DIR$/../LibraryManager/proj4android/proj4android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../LibraryManager/versionupdata/versionupdata.iml" filepath="$PROJECT_DIR$/../LibraryManager/versionupdata/versionupdata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xnbhq/xnbhq.iml" filepath="$PROJECT_DIR$/xnbhq/xnbhq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xnzrbhq.iml" filepath="$PROJECT_DIR$/xnzrbhq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhjc/zhjc.iml" filepath="$PROJECT_DIR$/zhjc/zhjc.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|top"
+    android:orientation="horizontal" >
+
+    <AutoCompleteTextView
+        android:id="@+id/autotextview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:focusable="true"
+        android:gravity="left|center"
+        android:padding="7dp"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#cbcbcb" />
+
+    <TextView
+        android:id="@+id/btn_dropdown"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@drawable/droparrow1"
+        android:padding="7dp" />
+
+</LinearLayout>

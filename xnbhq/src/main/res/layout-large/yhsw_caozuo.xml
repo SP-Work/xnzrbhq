@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/yhsw_tcqd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded_blue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize20"
+        android:text="踏查起点"
+        android:visibility="gone"
+         />
+
+    <TextView
+        android:id="@+id/yhsw_qxtc"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded_blue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize20"
+        android:text="取消踏查"
+        android:visibility="gone"
+         />
+     <TextView
+        android:id="@+id/yhsw_zjtcd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded_blue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize20"
+        android:text="增加踏查点"
+        android:visibility="gone"
+         />
+       <TextView
+        android:id="@+id/yhsw_jstc"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded_blue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize20"
+        android:text="结束踏查" 
+        android:visibility="gone"
+        />
+
+</LinearLayout>

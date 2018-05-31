@@ -1,0 +1,175 @@
+<resources>
+    <string name="app_name">贵州林情概览</string>
+    <string name="foresttitle">贵州林情</string>
+
+    <string name="lyywfl">林业业务分类</string>
+    <string name="gzlq">贵州林情</string>
+    <string name="lyjc">林业基础</string>
+    <string name="lmcf">林木采伐</string>
+    <string name="shmh">石漠化</string>
+    <string name="tghl">退耕还林</string>
+    <string name="gyl">公益林</string>
+    <string name="slfh">森林防火</string>
+    <string name="yzl">营造林</string>
+    <string name="sthly">生态护林员</string>
+    <string name="zmsc">种苗生产</string>
+    <string name="yhsw">林业有害生物</string>
+    <string name="ghry">管护人员</string>
+    <string name="lycy">林业产业</string>
+    <string name="lqgg">林权改革</string>
+    <string name="zrbhq">保护区公园等</string>
+    <string name="emporty">""</string>
+
+    /*时间*/
+    <string name="time1">"十二五"期间</string>
+    <string name="time2">2016年</string>
+    <string name="time3">自然保护区等</string>
+    <string name="sure">确定</string>
+    <string name="cancle">取消</string>
+
+    /*林业基础*/
+    <string name="gtmj">国土面积</string>
+    <string name="ldmj">林地面积</string>
+    <string name="slmj">森林面积</string>
+    <string name="xuji">蓄积</string>
+    <string name="slfgl">森林覆盖率</string>
+    <string name="sthx">生态红线</string>
+    <string name="lygzz">林业工作站</string>
+
+    <string name="gtmjdw">国土面积（万亩）</string>
+    <string name="ldmjdw">林地面积（万亩）</string>
+    <string name="slmjdw">森林面积（万亩）</string>
+    <string name="xujidw">蓄积（万立方米）</string>
+    <string name="slfgldw">森林覆盖率（%）</string>
+    <string name="sthxdw">生态红线（万亩）</string>
+    <string name="lygzzdw">林业工作站（个）</string>
+
+
+    /*林木采伐*/
+    <string name="cfxe">采伐限额</string>
+    <string name="cfl">采伐量</string>
+
+    /*石漠化*/
+    <string name="shmhmj">石漠化面积</string>
+    <string name="shmhzlmj">石漠化治理面积</string>
+    <string name="shmhdb">对比</string>
+
+    /*退耕还林*/
+    <string name="ktgd">可退耕地</string>
+    <string name="tgd">退耕地</string>
+    <string name="tghldb">对比</string>
+    <string name="eswktgd">25°以上可退耕地</string>
+    <string name="swktgd">15～25°可退耕地</string>
+    <string name="eswktgdf">可退耕地25°以上</string>
+    <string name="swktgdf">可退耕地15～25°</string>
+    <string name="ndddwc">年底调度完成</string>
+    <string name="ndddwcl">年底调度完成率</string>
+
+    /*公益林*/
+    <string name="gylmj">公益林面积</string>
+    <string name="gylzj">公益林资金</string>
+    <string name="mjhj">公益林面积合计</string>
+    <string name="gjmj">国家级公益林面积</string>
+    <string name="dfmj">地方公益林面积</string>
+    <string name="zjhj">公益林补偿资金合计</string>
+    <string name="gjzj">国家补偿资金</string>
+    <string name="dfzj">地方补偿资金</string>
+
+    /*森林防火*/
+    <string name="hzcs">火灾次数</string>
+    <string name="hzmj">火灾面积</string>
+    <string name="ssmj">损失面积</string>
+    <string name="jftr">经费投入</string>
+
+    /*营造林*/
+    <string name="yzl_mj">营造林面积</string>
+    <string name="yzl_zj">营造林资金</string>
+    <string name="yzl_mj_dw">营造林面积（万亩）</string>
+    <string name="yzl_zj_dw">营造林资金（万元）</string>
+    <string name="yzl_bgj_mj">报国家合计面积</string>
+    <string name="yzl_bgj_rgzl_mj">报国家人工造林面积</string>
+    <string name="yzl_bgj_fsyl_mj">报国家封山育林面积</string>
+    <string name="yzl_bszf_hjmj">报省政府合计面积</string>
+    <string name="yzl_bszf_rgzl_mj">报省政府人工造林面积</string>
+    <string name="yzl_bszf_fsyl_mj">报省政府封山育林面积</string>
+    <string name="yzl_fsyl_zmj">封山育林总面积</string>
+    <string name="yzl_bgj_hjzj">报国家合计资金</string>
+    <string name="yzl_bgj_zyzj">报国家中央资金</string>
+    <string name="yzl_bgj_sjtz">报国家省级投资</string>
+    <string name="yzl_bszf_hjzj">报省政府合计资金</string>
+    <string name="yzl_bszf_zyzj">报省政府中央资金</string>
+    <string name="yzl_bszf_sjtz">报省政府省级投资</string>
+    <string name="yzl_slfy_hjzj">森林抚育合计资金</string>
+
+    /*生态护林员*/
+    <string name="sthlyhj">合计</string>
+
+    /*种苗生产*/
+    <string name="zmschj">合计</string>
+    <string name="lgm">裸根苗</string>
+    <string name="rqm">容器苗</string>
+    <string name="lhm">绿化苗</string>
+
+    /*林业有害生物*/
+    <string name="fsmj">发生面积</string>
+    <string name="fzmj">防治面积</string>
+    <string name="fzjf">防治经费</string>
+    <string name="jymj">苗圃检疫面积</string>
+
+    /*管护人员*/
+    <string name="ghryhj">合计</string>
+    <string name="ghgyl">公益林</string>
+    <string name="tbgc">天保工程</string>
+    <string name="ghtghl">退耕还林</string>
+    <string name="hlfh">护林防火</string>
+    <string name="ghyzl">营造林</string>
+
+    /*林业生产*/
+    <string name="lycyhj">合计</string>
+    <string name="dycy">第一产业</string>
+    <string name="decy">第二产业</string>
+    <string name="dscy">第三产业</string>
+
+    /*林权改革*/
+    <string name="lgmj">林改面积</string>
+    <string name="sjnh">涉及农户</string>
+    <string name="sjrk">涉及人口</string>
+    <string name="slbx">森林保险</string>
+    <string name="lqdy">林权抵押</string>
+    <string name="lxzz">林下种植</string>
+
+    /*保护区公园等*/
+    <string name="gyzrbhq">自然保护区</string>
+    <string name="slgy">森林公园</string>
+    <string name="sdgy">湿地公园</string>
+    <string name="gylc">国有林场</string>
+    <string name="gygs">数量（个）</string>
+    <string name="totalarea">总面积（公顷）</string>
+    <string name="gjj">&#160;&#160;国家级</string>
+    <string name="shj">&#160;&#160;&#160;&#160;省级</string>
+    <string name="shij">&#160;&#160;&#160;&#160;市级</string>
+    <string name="xianj">&#160;&#160;&#160;&#160;县级</string>
+    <string name="zhcj">&#160;&#160;正处级</string>
+    <string name="fcj">&#160;&#160;副处级</string>
+    <string name="zhkj">&#160;&#160;正科级</string>
+    <string name="fkj">&#160;&#160;副科级</string>
+    <string name="guj">&#160;&#160;&#160;&#160;股级</string>
+
+    /*代码中用到的*/
+    <string name="gzsh">贵州省</string>
+    <string name="gyshi">贵阳市</string>
+    <string name="gaxq">贵安新区</string>
+    <string name="lbmc">行政区划</string>
+    <string name="dqname">地区名称</string>
+    <string name="nslcfxe">NSLCFXE</string>/*年森林采伐限额*/
+    <string name="nslcfl">NSLCFL</string>/*年森林采伐量*/
+    <string name="bt_qx">&#160;&#160;&#160;&#160;区县&#160;&#160;&#160;&#160;</string>
+
+    /*单位*/
+    <string name="wanmu">（万亩）</string>
+    <string name="wanlfm">（万m³）</string>
+    <string name="baifb">（%）</string>
+    <string name="geshu">（个）</string>
+    <string name="wanyuan">（万元）</string>
+
+</resources>

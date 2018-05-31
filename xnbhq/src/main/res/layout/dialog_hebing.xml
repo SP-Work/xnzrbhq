@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded_blue"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:text="选择小班属性"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize20" />
+
+        <TextView
+            android:id="@+id/hb_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:background="@drawable/background_view_rounded_lightblue"
+            android:padding="12dp"
+            android:text="@string/sure"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize20" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/cut_polygon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded" >
+    </ListView>
+
+</LinearLayout>

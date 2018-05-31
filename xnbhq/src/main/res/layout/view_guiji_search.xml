@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/view_gujii_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/background_view_rounded_blue"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="@string/guijichaxun"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/close_guijisearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/background_view_rounded_image"
+                android:contentDescription="@null"
+                android:padding="3dp"
+                android:src="@drawable/ic_close_black_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/latelyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/bg_linearlayout"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:padding="7dp"
+                android:text="@string/zuijinxiaoshi"
+                android:textColor="#1b85cf" />
+
+            <!--style="@style/spinner_style_m"-->
+            <Spinner
+                android:id="@+id/select_lately"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/startLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/bg_linearlayout"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:padding="7dp"
+                android:text="@string/search_starttime"
+                android:textColor="#1b85cf" />
+
+            <TextView
+                android:id="@+id/startTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_view_button"
+                android:gravity="left|center"
+                android:hint="@string/selecttime"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/endLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/bg_linearlayout"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:padding="7dp"
+                android:text="@string/search_endtime"
+                android:textColor="#1b85cf" />
+
+            <TextView
+                android:id="@+id/endTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_view_button"
+                android:gravity="left|center"
+                android:hint="@string/selecttime"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_linearlayout"
+            android:gravity="center"
+            android:padding="7dp">
+
+            <TextView
+                android:id="@+id/guijibutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_view_rec_graw"
+                android:gravity="center"
+                android:text="@string/guiji"
+                android:padding="@dimen/padding_5"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/zujibutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_view_rec_graw"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/zuji"
+                android:visibility="gone"
+                android:textColor="@color/blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_linearlayout"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <SeekBar
+                android:id="@+id/process_bar"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/btn_map_poi"
+                android:clickable="false"
+                android:max="0"
+                android:progress="0"
+                android:progressDrawable="@layout/seek_img" />
+
+            <TextView
+                android:id="@+id/btn_replay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_view_rec_graw"
+                android:enabled="false"
+                android:text="@string/huifang" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:visibility="gone"
+            android:background="#1b85cf" />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/zuji_expandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+</LinearLayout>

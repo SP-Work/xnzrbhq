@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 二调样地点属性字段 -->
+<root>
+   	 <!-- 1:选择类型字段 2:数字类型 3：文字类型 4：日期选择 -->
+	 <!-- 不显示的字段 -->
+	<dic tablename="keyout">
+	    <row id="1" name="OBJECTID"/>
+	    <row id="2" name="JOINID"/>
+	    <row id="3" name="MZGUID"/>
+	</dic>
+	<!-- 计算项 -->
+	<dic tablename="calculate">
+	    <row id="1" name="XBZS"/>
+	</dic>
+	<!-- 无需编辑的字段 -->
+	<dic tablename="notedite">
+	    <row id="1" name="OBJECTID"/>
+	</dic>
+	
+	
+    <!-- 控制点号 -->
+	<dic tablename="KZDH" type="2">
+	</dic>
+	
+	<!-- 定位横坐标-->
+	<dic tablename="DWHZB" type="3">
+	</dic>
+	<!-- 定位纵坐标-->
+	<dic tablename="DWZZB" type="3">
+	</dic>
+	
+	
+	
+	
+	
+</root>

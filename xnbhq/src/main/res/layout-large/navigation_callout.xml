@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/navigation_startp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded_blue"
+        android:gravity="center"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/nav_route_result_start_point"
+        android:text="设置为起点"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/navigation_hpway"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded_blue"
+        android:gravity="center"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/icon_gcoding"
+        android:text="设置为途径点"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/navigation_stopp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded_blue"
+        android:gravity="center"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/nav_route_result_end_point"
+        android:text="设置为终点"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

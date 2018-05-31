@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded_blue"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:text="日常巡查管理"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize20" />
+
+        <ImageView
+            android:id="@+id/swdyx_rcxj_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_rounded_image"
+            android:contentDescription="@null"
+            android:padding="5dp"
+            android:src="@drawable/ic_close_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background_view_rounded_blue"
+            android:padding="7dp"
+            android:text="巡查部门"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize18" />
+
+        <EditText
+            android:id="@+id/swdyx_rcgl_xcbm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:background="@drawable/background_edittxt"
+            android:hint=""
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background_view_rounded_blue"
+            android:padding="7dp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:text="巡查地点"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize18" />
+
+        <EditText
+            android:id="@+id/swdyx_rcgl_xcdd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:background="@drawable/background_edittxt"
+            android:hint=""
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background_view_rounded_blue"
+            android:padding="7dp"
+            android:gravity="center"
+            android:text="被巡查单位"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize18" />
+
+        <EditText
+            android:id="@+id/swdyx_rcgl_bxcdw"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:background="@drawable/background_edittxt"
+            android:hint=""
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background_view_rounded_blue"
+            android:padding="7dp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:text="数据所属"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize18" />
+
+        <Spinner
+            android:id="@+id/swdyx_rcgl_sjss"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            style="@style/spinner_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background_view_rounded_blue"
+            android:padding="7dp"
+            android:text="开始时间"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize18" />
+
+        <Button
+            android:id="@+id/swdyx_rcgl_kssj"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/background_edittxt"
+            android:hint=""
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background_view_rounded_blue"
+            android:padding="7dp"
+            android:gravity="center"
+            android:text="结束时间"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize18" />
+
+        <Button
+            android:id="@+id/swdyx_rcgl_jssj"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_edittxt"
+            android:hint=""
+            android:singleLine="true"
+            android:gravity="left|center_vertical"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background_view_rounded_blue"
+            android:padding="7dp"
+            android:text="是否违法"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize18" />
+
+        <Spinner
+            android:id="@+id/swdyx_rcgl_sfywfxw"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.7"
+            android:singleLine="true"
+            android:background="@drawable/background_edittxt" />
+
+        <Button
+            android:id="@+id/swdyx_rcgl_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background_view_rounded_blue"
+            android:paddingBottom="7dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="7dp"
+            android:singleLine="true"
+            android:text="添加"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize18" />
+
+        <Button
+            android:id="@+id/swdyx_rcgl_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background_view_rounded_blue"
+            android:paddingBottom="7dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:paddingTop="7dp"
+            android:text="刪除"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize18" />
+
+        <Button
+            android:id="@+id/swdyx_rcgl_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background_view_rounded_blue"
+            android:paddingBottom="7dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:paddingTop="7dp"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded_re"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="序号"
+            android:singleLine="true"
+            android:textColor="@color/balck"
+            android:textSize="@dimen/larger_txtsize16" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="巡查部门"
+            android:singleLine="true"
+            android:textColor="@color/balck"
+            android:textSize="@dimen/larger_txtsize16" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="巡查地点"
+            android:singleLine="true"
+            android:textColor="@color/balck"
+            android:textSize="@dimen/larger_txtsize16" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="出动人数"
+            android:singleLine="true"
+            android:textColor="@color/balck"
+            android:textSize="@dimen/larger_txtsize16" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="被巡查单位"
+            android:textColor="@color/balck"
+            android:textSize="@dimen/larger_txtsize16" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="被巡查人"
+            android:textColor="@color/balck"
+            android:textSize="@dimen/larger_txtsize16" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="巡查时间"
+            android:textColor="@color/balck"
+            android:textSize="@dimen/larger_txtsize16" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="@string/caozuo"
+            android:textColor="@color/balck"
+            android:textSize="@dimen/larger_txtsize16" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/swdyx_rcxj_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded" />
+
+    <TextView
+        android:id="@+id/swdyx_rcxj_zwsj"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_view_rounded"
+        android:gravity="top|center"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        android:text="暂无数据"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/larger_txtsize20"
+        android:visibility="visible" />
+
+</LinearLayout>

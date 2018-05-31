@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_cemian"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent" >
+
+    <LinearLayout
+        android:id="@+id/ll_popup_cemian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blue" /> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/item_popupwindows_dbx"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/btn_nobgd"
+                android:text="@string/select_dbx"
+                android:textColor="#585858"
+                android:textSize="@dimen/larger_txtsize20" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f2f2f2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/item_popupwindows_zyqx"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/btn_nobgd"
+                android:text="@string/select_zyqx"
+                android:textColor="#585858"
+                android:textSize="@dimen/larger_txtsize20" />
+        </LinearLayout>
+        
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f2f2f2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/item_popupwindows_freeline"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/btn_nobgd"
+                android:text="@string/select_freeline"
+                android:textColor="#585858"
+                android:textSize="@dimen/larger_txtsize20" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

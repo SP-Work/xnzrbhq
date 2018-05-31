@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    android:background="@drawable/background_view_rounded_blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:text="图层控制"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/close_tuceng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/background_view_rounded_image"
+            android:contentDescription="@null"
+            android:padding="5dp"
+            android:src="@drawable/ic_close_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@android:color/white"
+        android:gravity="left"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <CheckBox
+                android:id="@+id/cb_sl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:padding="7dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="基础图"
+                android:textColor="@color/balck"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/tile_extent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:background="@drawable/background_view_rounded_image"
+                android:contentDescription="@null"
+                android:padding="7dp"
+                android:src="@drawable/wb_feed_icon_gps" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <CheckBox
+                android:id="@+id/cb_ys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="7dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="影像图"
+                android:textColor="@color/balck"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/image_extent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:background="@drawable/background_view_rounded_image"
+                android:contentDescription="@null"
+                android:padding="7dp"
+                android:src="@drawable/wb_feed_icon_gps" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <CheckBox
+                android:id="@+id/cb_dxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="7dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="地形图"
+                android:textColor="@color/balck"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/dxt_extent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:background="@drawable/background_view_rounded_image"
+                android:contentDescription="@null"
+                android:padding="7dp"
+                android:src="@drawable/wb_feed_icon_gps" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blue" />
+
+        <!-- 自定义的ExpandableListView -->
+
+        <ExpandableListView
+            android:id="@+id/tc_expandlistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

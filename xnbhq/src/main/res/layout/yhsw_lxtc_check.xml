@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_view_rounded"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/checktclxxx"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/larger_txtsize22" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="7dp"
+                        android:singleLine="true"
+                        android:text="@string/tclxbh"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_tclxbh"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:singleLine="true"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:padding="7dp"
+                        android:text="@string/sbzt1"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_sbzt"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:padding="7dp"
+                        android:text="@string/tcqdjd"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_tcqdjd"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="7dp"
+                        android:singleLine="true"
+                        android:text="@string/tcqdwd"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_tcqdwd"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:singleLine="true"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="7dp"
+                        android:text="@string/tczdjd"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_tczdjd"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="7dp"
+                        android:singleLine="true"
+                        android:text="@string/tczdwd"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_tczdwd"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:singleLine="true"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:padding="7dp"
+                        android:text="@string/tcr"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_tcr"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:singleLine="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="7dp"
+                        android:singleLine="true"
+                        android:text="@string/tcrq"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_tcrq"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:padding="7dp"
+                        android:text="@string/tcdw"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_tcdw"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="7dp"
+                        android:text="@string/tcdbmj"
+                        android:singleLine="true"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_tcdbmj"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:singleLine="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="7dp"
+                        android:text="@string/yhswmc"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_yhswmc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:singleLine="true"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:padding="7dp"
+                        android:text="@string/jzmc"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_jzmc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1.5"
+                        android:singleLine="true"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="7dp"
+                        android:text="@string/lfzc"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_lfzc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="7dp"
+                        android:text="@string/city"
+                        android:singleLine="true"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_city"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:singleLine="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:padding="7dp"
+                        android:text="@string/county"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_county"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.5"
+                        android:singleLine="true"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:padding="7dp"
+                        android:text="@string/town"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_town"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:singleLine="true"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="7dp"
+                        android:text="@string/village"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_village"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="7dp"
+                        android:singleLine="true"
+                        android:text="@string/sbaor"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_sbr"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="7dp"
+                        android:text="@string/sbaosj"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_sbsj"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.5"
+                        android:singleLine="true"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="invisible" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:padding="7dp"
+                        android:text="@string/sbzt1"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:singleLine="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="7dp"
+                        android:singleLine="true"
+                        android:text="@string/bz"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <TextView
+                        android:id="@+id/yhsw_tclx_bz"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="4.08"
+                        android:background="@drawable/background_edittxt"
+                        android:gravity="left|center_vertical"
+                        android:singleLine="true"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_view_rounded_blue"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/yhsw_tclx_back"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/background_view_button"
+                    android:padding="10dp"
+                    android:text="@string/back"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/larger_txtsize18" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

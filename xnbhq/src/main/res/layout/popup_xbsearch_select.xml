@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/pop_xbsear_jiandan"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="简单查询"
+        android:textColor="@color/white"
+        android:background="@drawable/background_view_rounded_blue"
+        android:textSize="@dimen/larger_txtsize16" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/pop_xbsear_zidy"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="自定义查询"
+        android:background="@drawable/background_view_rounded_blue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize16" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/black" />
+
+</LinearLayout>

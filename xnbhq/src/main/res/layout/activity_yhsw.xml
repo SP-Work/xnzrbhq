@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activity.YHSWActivity" >
+
+    <include
+        layout="@layout/activity_base" />
+    <include
+        android:id="@+id/yhsw_bottomview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/yhsw_bootem_view" />
+    <include 
+        android:id="@+id/yhsw_cz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/yhsw_bottomview"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="150dp"
+        android:layout_centerHorizontal="true"
+        layout="@layout/yhsw_caozuo"
+        />
+</RelativeLayout>

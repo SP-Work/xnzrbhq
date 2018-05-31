@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_querytitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_rounded_blue"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="@string/searchresult"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize20" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_rounded"
+            android:gravity="center|left"
+            android:padding="7dp"
+            android:text="内容"
+            android:textColor="@color/balck"
+            android:textSize="@dimen/larger_txtsize20" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/blue" />
+
+        <ListView
+            android:id="@+id/ed_featureresult_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_rounded" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/btn_addyd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_rounded_blue"
+            android:padding="7dp"
+            android:text="添加样地"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize20" />
+    </LinearLayout>
+
+</LinearLayout>

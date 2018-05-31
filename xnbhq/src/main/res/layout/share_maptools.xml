@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/callout_mappoint"
+            style="@style/imgbutton_style"
+            android:onClick="pointInMap"
+            android:src="@drawable/share_map_tools_xbdh" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/share_navigation"
+            style="@style/imgbutton_style"
+            android:onClick="navigation"
+            android:src="@drawable/share_map_tools_navigation" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/share_isearch"
+            style="@style/imgbutton_style"
+            android:onClick="isearche"
+            android:src="@drawable/share_map_tools_isearch" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/share_ceju"
+            style="@style/imgbutton_style"
+            android:onClick="ceju"
+            android:src="@drawable/share_map_tools_distance" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/share_cemian"
+            style="@style/imgbutton_style"
+            android:onClick="cemian"
+            android:src="@drawable/share_map_tools_areas" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/share_clean"
+            style="@style/imgbutton_style"
+            android:onClick="clean"
+            android:src="@drawable/share_map_tools_clean" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/share_mylocation"
+            style="@style/imgbutton_style"
+            android:onClick="mylocation"
+            android:scaleType="fitXY"
+            android:src="@drawable/share_map_tools_dw" />
+    </LinearLayout>
+
+
+</LinearLayout>

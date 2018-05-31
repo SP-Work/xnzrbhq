@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded_blue"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:text="@string/sys_tmd"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/tmdsettings_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/background_view_rounded_image"
+            android:contentDescription="@null"
+            android:padding="5dp"
+            android:src="@drawable/ic_close_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@drawable/background_view_rec_graw"
+            android:gravity="center"
+            android:text="@string/toumingdu"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/larger_txtsize20" />
+
+        <SeekBar
+            android:id="@+id/title_symbol_seekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="7dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="@string/currentvalue"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/larger_txtsize20" />
+
+        <TextView
+            android:id="@+id/title_toumingdu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:padding="7dp"
+            android:textColor="@color/balck"
+            android:textSize="@dimen/larger_txtsize20" />
+
+        <Button
+            android:id="@+id/title_symbo_reset"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/background_view_rec_graw"
+            android:gravity="center"
+            android:text="@string/reset"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/larger_txtsize20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/layer_render_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_view_button"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/sure"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/larger_txtsize20" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/layer_render_btn_opsure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_view_button"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/sure2"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/larger_txtsize20"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <RadioButton
+            android:id="@+id/layer_render_cancle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_view_button"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/cancle"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/larger_txtsize20"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

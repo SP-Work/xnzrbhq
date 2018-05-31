@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_marginTopPercent="10%">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@drawable/left_edit"
+            android:contentDescription="@null"
+            android:padding="20dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/center_edit"
+            android:contentDescription="@null"
+            android:padding="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@drawable/right_edit"
+            android:contentDescription="@null"
+            android:padding="20dp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_marginLeftPercent="8%"
+        app:layout_marginRightPercent="8%"
+        app:layout_marginTopPercent="2%">
+
+        <LinearLayout
+            style="@style/radiobtn_style_m"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/addfeature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xbbj_add"
+                android:button="@null"
+                android:onClick="addFeature" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="新增小班"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/radiobtn_style_m"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/addfeaturegb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xbbj_addgb"
+                android:button="@null"
+                android:onClick="addFeatureGb" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="共边增班"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/radiobtn_style_m"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/copyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xbbj_copy"
+                android:button="@null"
+                android:onClick="copyFeature" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="复制图斑"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/radiobtn_style_m"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xbbj_delete"
+                android:button="@null"
+                android:onClick="deleteFeature" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="删除图斑"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/radiobtn_style_m"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/repealButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xbbj_chexiao"
+                android:button="@null"
+                android:onClick="repealFeature" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="撤销"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/radiobtn_style_m"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/qiegeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xbbj_qiege"
+                android:button="@null"
+                android:onClick="qiegeFeature" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="切割图斑"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/radiobtn_style_m"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/hebingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xbbj_hebing"
+                android:button="@null"
+                android:onClick="mergeFeature" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="合并图斑"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/radiobtn_style_m"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/xiubanButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xbbj_xiub"
+                android:button="@null"
+                android:onClick="xiubFeature" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="修班"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/radiobtn_style_m"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/attributButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xbbj_attribte"
+                android:button="@null"
+                android:onClick="attributeFeture" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="属性编辑"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/radiobtn_style_m"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/selectButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xbbj_select"
+                android:button="@null"
+                android:onClick="selectFeature" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="选择小班"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/radiobtn_style_m"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xbbj_mapremove"
+                android:button="@null"
+                android:onClick="mapRemove" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="平移"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+    </RadioGroup>
+
+</android.support.percent.PercentFrameLayout>

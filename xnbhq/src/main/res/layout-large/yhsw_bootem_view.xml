@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/yhsw_yhswtc"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginRight="0.5dp"
+        android:singleLine="true"
+        android:text="@string/yhswtc"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize20" />
+
+    <TextView
+        android:id="@+id/yhsw_ydchdc"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/background_view_rounded_blue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/ydchdc"
+        android:layout_marginLeft="0.5dp"
+        android:layout_marginRight="0.5dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize20" />
+
+    <TextView
+        android:id="@+id/yhsw_ydbhdc"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/background_view_rounded_blue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:layout_marginLeft="0.5dp"
+        android:layout_marginRight="0.5dp"
+        android:text="@string/ydbhdc"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize20" />
+
+    <TextView
+        android:id="@+id/yhsw_yhzwdc"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:background="@drawable/background_view_rounded_blue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginLeft="0.5dp"
+        android:layout_marginRight="0.5dp"
+        android:text="@string/yhzwdc"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize20" />
+
+    <TextView
+        android:id="@+id/yhsw_mcbchdc"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/background_view_rounded_blue"
+        android:gravity="center"
+        android:singleLine="true"
+        android:padding="10dp"
+        android:layout_marginLeft="0.5dp"
+        android:layout_marginRight="0.5dp"
+        android:text="@string/mcbchdc"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize20" />
+
+    <TextView
+        android:id="@+id/yhsw_ycddc"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:background="@drawable/background_view_rounded_blue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/ycddc"
+        android:layout_marginLeft="0.5dp"
+        android:layout_marginRight="0.5dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize20" />
+
+    <TextView
+        android:id="@+id/yhsw_scxcbpc"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/background_view_rounded_blue"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_marginLeft="0.5dp"
+        android:padding="10dp"
+        android:text="@string/scxcbdc"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize20" />
+
+    <TextView
+        android:id="@+id/yhsw_erweima"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/background_view_rounded_blue"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_marginLeft="0.5dp"
+        android:padding="10dp"
+        android:text="@string/erweima"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize20" />
+
+</LinearLayout>

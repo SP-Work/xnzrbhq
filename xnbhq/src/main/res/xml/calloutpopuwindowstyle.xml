@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <calloutViewStyle
+        titleTextColor="#1b85cf"
+        titleTextSize="10dp"
+        titleTextStyle="0"
+        titleTextTypeFace="0"
+        backgroundColor="@color/transparent"
+        backgroundAlpha="0"
+        frameColor="#000000"
+        flat="true"
+        cornerCurve="0"
+        cornerCurveDp="0"
+        style.getCornerCurve="0"
+        anchor="3" />
+    
+</resources>

@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_view_rounded"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/blue"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/zbdcjl"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/larger_txtsize22" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.8"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="样地号："
+                android:textColor="@color/blue"
+                android:textSize="@dimen/larger_txtsize20" />
+
+            <TextView
+                android:id="@+id/ydh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#DCDCDC"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/larger_txtsize20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="样方情况说明："
+                android:textColor="@color/blue"
+                android:textSize="@dimen/larger_txtsize20" />
+
+            <TextView
+                android:id="@+id/yfqksm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_view_textview_selector"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/larger_txtsize20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="样方设置位置："
+                android:textColor="@color/blue"
+                android:textSize="@dimen/larger_txtsize20" />
+
+            <TextView
+                android:id="@+id/yfszwz"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_view_textview_selector"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/larger_txtsize20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="样方总盖度(%)："
+                android:textColor="@color/blue"
+                android:textSize="@dimen/larger_txtsize20" />
+
+            <TextView
+                android:id="@+id/yfzgd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_view_textview_selector"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/larger_txtsize20" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_view_rounded_blue"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/save"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/background_view_button"
+            android:padding="10dp"
+            android:text="@string/bc"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize18" />
+
+        <Button
+            android:id="@+id/cancle"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/background_view_button"
+            android:padding="10dp"
+            android:text="@string/cancle"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linearLayout1"
+        android:layout_below="@+id/linear2"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/gm"
+                android:layout_width="80dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="灌木"
+                android:textColor="#000000"
+                android:textSize="@dimen/larger_txtsize20" />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0.5dp"
+                android:background="@color/balck" />
+
+            <TextView
+                android:id="@+id/cb"
+                android:layout_width="80dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#90EE90"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="草本"
+                android:textColor="#000000"
+                android:textSize="@dimen/larger_txtsize20" />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0.5dp"
+                android:background="@color/balck" />
+
+            <TextView
+                android:id="@+id/dbw"
+                android:layout_width="80dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#90EE90"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="地被物"
+                android:textColor="#000000"
+                android:textSize="@dimen/larger_txtsize20" />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0.5dp"
+                android:background="@color/balck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lineargm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="名称"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="株数"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="平均高(米)"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="平均地径(厘米)"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="盖度(%)"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="操作"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="#DCDCDC"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="合计"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:id="@+id/gmzongzs"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="#DCDCDC"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:id="@+id/gmpjg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="#DCDCDC"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:id="@+id/gmpjdj"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="#DCDCDC"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:id="@+id/gaidu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_edittxt"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="操作"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/linear30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:background="#000000" />
+
+                    <TextView
+                        android:id="@+id/addmore"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="点击添加新纪录  >>>"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize20" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:background="#000000" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/linear30"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/background_view_rounded"
+                    android:divider="@null" >
+                </ListView>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearcb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="名称"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="平均高(米)"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="盖度(%)"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="操作"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="#DCDCDC"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="合计"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:id="@+id/cbpjg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="#DCDCDC"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:id="@+id/cbgaidu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_edittxt"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="操作"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/linear31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:background="#000000" />
+
+                    <TextView
+                        android:id="@+id/cbaddmore"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="点击添加新纪录  >>>"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize20" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:background="#000000" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/cblistview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/linear31"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/background_view_rounded"
+                    android:divider="@null" >
+                </ListView>
+            </RelativeLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/lineardbw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="名称"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="平均高(米)"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="盖度(%)"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="操作"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="#DCDCDC"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="合计"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:id="@+id/dbwpjg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="#DCDCDC"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:id="@+id/dbwgaidu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_edittxt"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="操作"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize20" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:background="#000000" />
+
+                    <TextView
+                        android:id="@+id/dbwaddmore"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="点击添加新纪录  >>>"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize20" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:background="#000000" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/dbwlistview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/linear3"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/background_view_rounded"
+                    android:divider="@null" >
+                </ListView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

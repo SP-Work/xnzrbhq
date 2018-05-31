@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/person_datadownload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_image"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:onClick="downloaddata"
+        android:padding="8dp" >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/download" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/data_download"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize16" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/person_dataup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_image"
+        android:orientation="horizontal"
+        android:onClick="dataUpToServer"
+        android:gravity="center"
+        android:padding="8dp" >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_menu_upload" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/data_upserver"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize16" />
+    </LinearLayout>
+
+</LinearLayout>

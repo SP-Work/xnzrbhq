@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_5"
+        android:layout_marginTop="@dimen/padding_5"
+        android:text="@string/system_name"
+        android:textSize="@dimen/textsize_18"
+        android:textColor="@color/blue"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:background="@drawable/share_top_bg"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tckz_imageview"
+            style="@style/topbar_style_l"
+            android:text="@string/tucengkongzhi"
+            android:drawableTop="@drawable/share_tucengkongzhi" />
+
+        <TextView
+            android:id="@+id/share_xbqd"
+            style="@style/topbar_style_l"
+            android:text="@string/xiaobanqingdan"
+            android:visibility="gone"
+            android:drawableTop="@drawable/xiaobanlist_btn" />
+
+        <TextView
+            android:id="@+id/share_dmgl"
+            style="@style/topbar_style_l"
+            android:text="@string/dimingsousuo"
+            android:drawableTop="@drawable/share_dm_manger" />
+
+        <TextView
+            android:id="@+id/share_xbcx"
+            style="@style/topbar_style_l"
+            android:text="@string/xiaobanchaxun"
+            android:visibility="gone"
+            android:drawableTop="@drawable/share_xiaobanchaxun" />
+
+        <TextView
+            android:id="@+id/share_xbbj"
+            style="@style/topbar_style_l"
+            android:text="@string/xiaobanbianji"
+            android:visibility="gone"
+            android:drawableTop="@drawable/share_xiaobanbianji" />
+
+        <TextView
+            android:id="@+id/share_gjcx"
+            style="@style/topbar_style_l"
+            android:text="@string/guijichaxun"
+            android:drawableTop="@drawable/share_guijichaxun" />
+
+        <TextView
+            android:id="@+id/share_tcxr"
+            style="@style/topbar_style_l"
+            android:text="@string/tucengxuanran"
+            android:drawableTop="@drawable/tucengxuanran" />
+
+        <TextView
+            android:id="@+id/share_zbdw"
+            style="@style/topbar_style_l"
+            android:text="@string/zuobiaodingwei"
+            android:drawableTop="@drawable/share_zuobiaodingwei" />
+
+        <TextView
+            android:id="@+id/share_grzx"
+            style="@style/topbar_style_l"
+            android:text="@string/gerenzhongxin"
+            android:drawableTop="@drawable/share_person_center" />
+
+        <TextView
+            android:id="@+id/share_xtsz"
+            style="@style/topbar_style_l"
+            android:text="@string/xitongshezhi"
+            android:drawableTop="@drawable/share_sys_settings" />
+
+
+        <TextView
+            android:id="@+id/shuju_sjtb"
+            style="@style/topbar_style"
+            android:drawableTop="@drawable/share_shujutongbu"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/share_sbsj"
+            style="@style/topbar_style_l"
+            android:text="@string/shijianshangbao"
+            android:drawableTop="@drawable/share_shangbaoshijian"/>
+
+        <TextView
+            android:id="@+id/shuxing_lable"
+            style="@style/topbar_style_l"
+            android:text="@string/tucengbiaozhu"
+            android:drawableTop="@drawable/share_shuxingbiaozhu" />
+
+        <TextView
+            android:id="@+id/top_addnewlayer"
+            style="@style/topbar_style_l"
+            android:text="@string/xinjiantuceng"
+            android:visibility="gone"
+            android:drawableTop="@drawable/add_newlayer" />
+
+    </LinearLayout>
+
+</FrameLayout>

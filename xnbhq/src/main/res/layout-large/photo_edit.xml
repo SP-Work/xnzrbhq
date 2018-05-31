@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="图片编辑"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/larger_txtsize20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2" >
+
+                <ImageView
+                    android:id="@+id/showimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/blue" >
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:orientation="vertical" >
+        </View>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/timebz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="添加时间标注" 
+                android:layout_margin="10dp"
+                android:background="@drawable/background_view_button"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/larger_txtsize18" />
+            <Button
+                android:id="@+id/zuobiaobz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="添加坐标标注" 
+                android:layout_margin="10dp"
+                android:background="@drawable/background_view_button"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/larger_txtsize18" />
+            <Button
+                android:id="@+id/tianjiams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="添加图片描述" 
+                android:layout_margin="10dp"
+                android:background="@drawable/background_view_button"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/larger_txtsize18" />
+            <Button
+                android:id="@+id/sure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="确定" 
+                android:layout_margin="10dp"
+                android:background="@drawable/background_view_button"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/larger_txtsize18" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

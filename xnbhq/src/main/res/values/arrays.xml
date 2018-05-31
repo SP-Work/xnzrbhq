@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--疫源疫病检测单位-->
+    <string-array name="yyyb_jcdw">
+        <item>---===---</item>
+        <item>贵州红枫湖国家级野生动物疫源疫病监测站</item>
+        <item>花溪区疫源疫病监测中心</item>
+        <item>南明疫源疫病监测中心</item>
+        <item>野生动物疫源疫病监测站</item>
+    </string-array>
+
+    <string-array name="mapscale">
+        <item>1:500000</item>
+        <item>1:250000</item>
+        <item>1:100000</item>
+        <item>1:50000</item>
+        <item>1:10000</item>
+        <item>1:5000</item>
+        <item>1:2000</item>
+    </string-array>
+
+    <string-array name="collection_type">
+        <item>只采集轨迹</item>
+        <item>只采集图班</item>
+    </string-array>
+
+    <string-array name="keyout">
+        <item>OBJECTID</item>
+        <item>SHAPE</item>
+        <item>SHAPE_Area</item>
+        <item>SHAPE_Length</item>
+        <item>GLOBALID</item>
+        <item>MZAREA</item>
+        <item>MZGUID</item>
+    </string-array>
+
+    <string-array name="data_sx">
+        <item>贵阳市</item>
+        <item>观山湖区</item>
+        <item>云岩区</item>
+        <item>南明区</item>
+        <item>乌当区</item>
+        <item>花溪区</item>
+        <item>白云区</item>
+        <item>经济技术开发区</item>
+        <item>清镇市</item>
+        <item>开阳县</item>
+        <item>息烽县</item>
+        <item>修文县</item>
+        <item>顺海林场</item>
+        <item>长坡岭林场</item>
+    </string-array>
+    <string-array name="qx_data">
+        <item>观山湖区</item>
+        <item>云岩区</item>
+        <item>南明区</item>
+        <item>乌当区</item>
+        <item>花溪区</item>
+        <item>白云区</item>
+        <item>经济技术开发区</item>
+        <item>清镇市</item>
+        <item>开阳县</item>
+        <item>息烽县</item>
+        <item>修文县</item>
+    </string-array>
+    <string-array name="hour_select">
+        <item>--请选择--</item>
+        <item>1</item>
+        <item>3</item>
+        <item>6</item>
+        <item>9</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="cbtj">
+        <item>自然传播</item>
+        <item>人为传播</item>
+    </string-array>
+    <string-array name="whbw">
+        <item>根</item>
+        <item>茎</item>
+        <item>叶</item>
+        <item>花</item>
+        <item>果</item>
+        <item>无</item>
+    </string-array>
+    <string-array name="sfsb">
+        <item>-全部-</item>
+        <item>-已上报-</item>
+        <item>-未上报-</item>
+    </string-array>
+    <string-array name="mcwhcd">
+        <item>轻度</item>
+        <item>中度</item>
+        <item>重度</item>
+        <item>无</item>
+    </string-array>
+    <string-array name="ct">
+        <item>蛹</item>
+        <item>卵</item>
+        <item>幼虫</item>
+        <item>成虫</item>
+        <item>无</item>
+    </string-array>
+    <string-array name="ly">
+        <item>本土</item>
+        <item>外来</item>
+    </string-array>
+
+    <string-array name="lfzc">
+        <item>纯林</item>
+        <item>混交林</item>
+    </string-array>
+
+    <string-array name="ydxz">
+        <item>正方形</item>
+        <item>长方形</item>
+        <item>圆形</item>
+    </string-array>
+    <string-array name="dclx">
+        <item>样地虫害</item>
+        <item>苗圃</item>
+    </string-array>
+    <string-array name="pw">
+        <item>脊</item>
+        <item>上</item>
+        <item>中</item>
+        <item>下</item>
+        <item>谷</item>
+        <item>平地</item>
+    </string-array>
+    <string-array name="gslx">
+        <item>干果</item>
+        <item>鲜果</item>
+        <item>其他</item>
+        <item>无</item>
+    </string-array>
+    <string-array name="fblx">
+        <item>零星分布</item>
+        <item>块状分布</item>
+        <item>全面分布</item>
+    </string-array>
+    <string-array name="fblxyhzw">
+        <item>零星分布</item>
+        <item>集中分布</item>
+    </string-array>
+    <string-array name="dx">
+        <item>平</item>
+        <item>缓</item>
+        <item>斜</item>
+        <item>陡</item>
+        <item>急</item>
+        <item>险</item>
+    </string-array>
+    <string-array name="bhfj">
+        <item>0级</item>
+        <item>1级</item>
+        <item>2级</item>
+        <item>3级</item>
+        <item>4级</item>
+    </string-array>
+    <!-- 连续清查 样地调查记录字段 -->
+    <string-array name="yddcjlbzd">
+        <item>YDH</item>
+        <item>ZTMC</item>
+        <item>YDXZ</item>
+        <item>YDMJ</item>
+        <item>YDZZB</item>
+        <item>YDHZB</item>
+        <item>YDJJ</item>
+        <item>DXTTFH1</item>
+        <item>WPH</item>
+        <item>DXTTFH2</item>
+        <item>LBXBH</item>
+        <item>LGZDH</item>
+        <item>DFXZBM</item>
+        <item>LYXZBM</item>
+        <item>DI</item>
+        <item>XIAN</item>
+        <item>XIANG</item>
+        <item>CUN</item>
+        <item>LYQYJ</item>
+        <item>ZRBHQ</item>
+        <item>SLGY</item>
+        <item>GYLC</item>
+        <item>JTLC</item>
+        <item>XDM</item>
+        <item>DCY1</item>
+        <item>DCYGZDW1</item>
+        <item>DCY2</item>
+        <item>DCYGZDW2</item>
+        <item>DCY3</item>
+        <item>DCYGZDW3</item>
+        <item>XD1</item>
+        <item>DWJDZ1</item>
+        <item>XD2</item>
+        <item>DWJDZ2</item>
+        <item>XD3</item>
+        <item>DWJDZ3</item>
+        <item>JCY1</item>
+        <item>JCYGZDW1</item>
+        <item>JCY2</item>
+        <item>JCYGZDZ2</item>
+        <item>JCY3</item>
+        <item>JCYGZDZ3</item>
+        <item>DCRQ </item>
+        <item>JCRQ</item>
+    </string-array>
+    <!-- 下木调查名称 -->
+    <string-array name="lxqcxmdcmc">
+        <item>样地号：</item>
+        <item>名称(树种)：</item>
+        <item>高度(米)：</item>
+        <item>胸径(厘米):</item>
+    </string-array>
+    <!-- 连续清查 下木调查字段 -->
+    <string-array name="lxqcxmdczd">
+        <item>YDH</item>
+        <item>SZMC</item>
+        <item>GD</item>
+        <item>XJ</item>
+    </string-array>
+    <!-- 森林灾害情况名称 -->
+    <string-array name="lxqcslzhmc">
+        <item>样地号：</item>
+        <item>序号：</item>
+        <item>灾害类型：</item>
+        <item>危害部位：</item>
+        <item>受害样木株数(%)：</item>
+        <item>受害等级：</item>
+    </string-array>
+    <string-array name="whcd">
+        <item>-全部-</item>
+        <item>-轻度-</item>
+        <item>-中度-</item>
+        <item>-重度-</item>
+        <item>-无-</item>
+    </string-array>
+    <!-- 森林灾害情况字段 -->
+    <string-array name="lxqcslzhzd">
+        <item>YDH</item>
+        <item>XH</item>
+        <item>ZHLX</item>
+        <item>WHBW</item>
+        <item>SHYMZS</item>
+        <item>SHDJ</item>
+    </string-array>
+    <!-- 复查期内样地变化情况字段 -->
+    <string-array name="lxqcfcqydbhzd">
+        <item>QQDL</item>
+        <item>QQLZ</item>
+        <item>QQQY</item>
+        <item>QQYSSZ</item>
+        <item>QQLZU</item>
+        <item>QQZBLX</item>
+        <item>BQDL</item>
+        <item>BQLZ</item>
+        <item>BQQY</item>
+        <item>BQYSSZ</item>
+        <item>BQLZU</item>
+        <item>BQZBLX</item>
+        <item>DLBHYY</item>
+        <item>LZBHYY</item>
+        <item>QYBHYY</item>
+        <item>YSSZBHYY</item>
+        <item>LZUBHYY</item>
+        <item>ZBLXBHYY</item>
+        <item>YDH</item>
+        <item>YDYWTSDDJSM</item>
+    </string-array>
+    <!-- 天然更新情况名称 -->
+    <string-array name="lxqctrgxqkmc">
+        <item>样地号：</item>
+        <item>树种：</item>
+        <item>株数(高&#060;30cm)：</item>
+        <item>株数(30≤高&#060;50cm)：</item>
+        <item>株数(高>50cm)：</item>
+        <item>健康状况：</item>
+        <item>破坏情况：</item>
+    </string-array>
+    <!-- 资源连续清查 天然更新情况调查字段-->
+    <string-array name="lxqctrgxqkzd">
+        <item>YDH</item>
+        <item>SZ</item>
+        <item>GAOZS1</item>
+        <item>GAOZS2</item>
+        <item>GAOZS3</item>
+        <item>JKZK</item>
+        <item>PHQK</item>
+    </string-array>
+    <!-- 跨角林调查字段 -->
+    <string-array name="kjldcjlmc">
+        <item>面积比例</item>
+        <item>地类</item>
+        <item>土地权属</item>
+        <item>林木权属</item>
+        <item>林种</item>
+        <item>起源</item>
+        <item>优势树种</item>
+        <item>龄组</item>
+        <item>郁闭度</item>
+        <item>平均树高</item>
+        <item>森林群落结构</item>
+        <item>树种结构</item>
+        <item>商品林经营等级</item>
+    </string-array>
+    <!-- 跨角林调查字段 -->
+    <string-array name="kjldcjlzd">
+        <item>YDH</item>
+        <item>MJBL1</item>
+        <item>MJBL2</item>
+        <item>MJBL3</item>
+        <item>DL1</item>
+        <item>DL2</item>
+        <item>DL3</item>
+        <item>TDQS1</item>
+        <item>TDQS2</item>
+        <item>TDQS3</item>
+        <item>LMQS1</item>
+        <item>LMQS2</item>
+        <item>LMQS3</item>
+        <item>LZ1</item>
+        <item>LZ2</item>
+        <item>LZ3</item>
+        <item>QY1</item>
+        <item>QY2</item>
+        <item>QY3</item>
+        <item>YSSZ1</item>
+        <item>YSSZ2</item>
+        <item>YSSZ3</item>
+        <item>LZU1</item>
+        <item>LZU2</item>
+        <item>LZU3</item>
+        <item>YBD1</item>
+        <item>YBD2</item>
+        <item>YBD3</item>
+        <item>PJSG1</item>
+        <item>PJSG2</item>
+        <item>PJSG3</item>
+        <item>SLQLJG1</item>
+        <item>SLQLJG2</item>
+        <item>SLQLJG3</item>
+        <item>SZJG1</item>
+        <item>SZJG2</item>
+        <item>SZJG3</item>
+        <item>SPLJYDJ1</item>
+        <item>SPLJYDJ2</item>
+        <item>SPLJYDJ3</item>
+        <item>QQMJBL1</item>
+        <item>QQMJBL2</item>
+        <item>QQMJBL3</item>
+        <item>QQDL1</item>
+        <item>QQDL2</item>
+        <item>QQDL3</item>
+        <item>QQTDQS1</item>
+        <item>QQTDQS2</item>
+        <item>QQTDQS3</item>
+        <item>QQLMQS1</item>
+        <item>QQLMQS2</item>
+        <item>QQLMQS3</item>
+        <item>QQLZ1</item>
+        <item>QQLZ2</item>
+        <item>QQLZ3</item>
+        <item>QQQY1</item>
+        <item>QQQY2</item>
+        <item>QQQY3</item>
+        <item>QQYSSZ1</item>
+        <item>QQYSSZ2</item>
+        <item>QQYSSZ3</item>
+        <item>QQLZU1</item>
+        <item>QQLZU2</item>
+        <item>QQLZU3</item>
+        <item>QQYBD1</item>
+        <item>QQYBD2</item>
+        <item>QQYBD3</item>
+        <item>QQPJSG1</item>
+        <item>QQPJSG2</item>
+        <item>QQPJSG3</item>
+        <item>QQSLQLJG1</item>
+        <item>QQSLQLJG2</item>
+        <item>QQSLQLJG3</item>
+        <item>QQSZJG1</item>
+        <item>QQSZJG2</item>
+        <item>QQSZJG3</item>
+        <item>QQSPLJYDJ1</item>
+        <item>QQSPLJYDJ2</item>
+        <item>QQSPLJYDJ3</item>
+    </string-array>
+    <!-- 每木检尺字段 -->
+    <string-array name="mmjczd">
+        <item>YDH</item>
+        <item>YMH</item>
+        <item>LMLX</item>
+        <item>JCLX</item>
+        <item>SHUZ</item>
+        <item>QQXJ</item>
+        <item>BQXJ</item>
+        <item>DWD</item>
+        <item>FWJ</item>
+        <item>SPJ</item>
+        <item>XZB</item>
+        <item>YZB</item>
+        <item>CFGLLX</item>
+        <item>LINCEN</item>
+        <item>KJDLXH</item>
+        <item>ZHLX</item>
+        <item>BZ</item>
+        <item>GDBZSM</item>
+
+        <item>QQSHUZ</item>
+        <item>QQCFGLLX</item>
+        <item>QQLINCEN</item>
+        <item>QQKJDLXH</item>
+        <item>QQFWJ</item>
+        <item>QQSPJ</item>
+        <item>QQZHLX</item>
+        <item>QQBZ</item>
+        <item>QQLMLX</item>
+        <item>QQJCLX</item>
+    </string-array>
+
+    <!--许可证查询-->
+    <string-array name="jyxkz">
+        <item>贵阳市所有地区</item>
+        <item>贵阳市本级</item>
+        <item>观山湖区</item>
+        <item>云岩区</item>
+        <item>南明区</item>
+        <item>乌当区</item>
+        <item>花溪区</item>
+        <item>白云区</item>
+        <item>经济技术开发区</item>
+        <item>清镇市</item>
+        <item>开阳县</item>
+        <item>息烽县</item>
+        <item>修文县</item>
+        <item>顺海林场</item>
+        <item>长坡岭林场</item>
+        <item>扎佐林场</item>
+        <item>林科院实验林场</item>
+    </string-array>
+
+    <!--企业性质-->
+    <string-array name="qyxz">
+        <item>全民所有制（国营）</item>
+        <item>集体所有制</item>
+        <item>联营</item>
+        <item>三资</item>
+        <item>私营</item>
+        <item>其它</item>
+        <item>个人</item>
+        <item>国有</item>
+        <item>集体</item>
+        <item>有限责任公司</item>
+        <item>股份制</item>
+        <item>其它</item>
+    </string-array>
+
+    <!--所属地区-->
+    <string-array name="ssqy">
+        <item>贵阳市</item>
+        <item>观山湖区</item>
+        <item>云岩区</item>
+        <item>南明区</item>
+        <item>乌当区</item>
+        <item>花溪区</item>
+        <item>白云区</item>
+        <item>经济技术开发区</item>
+        <item>清镇市</item>
+        <item>开阳县</item>
+        <item>息烽县</item>
+        <item>修文县</item>
+        <item>顺海林场</item>
+        <item>长坡岭林场</item>
+        <item>扎佐林场</item>
+        <item>林科院实验林场</item>
+    </string-array>
+</resources>

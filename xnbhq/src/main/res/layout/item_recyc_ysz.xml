@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_sydq"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:text="所属地区"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_yszh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:padding="5dp"
+        android:text="运输证号"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_huozhu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:text="货主"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_cyr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:text="承运人"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_lzr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:text="领证人"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_yxrq"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:text="有效日期"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_caiji"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:text="材积"
+        android:textColor="@color/black" />
+
+</LinearLayout>

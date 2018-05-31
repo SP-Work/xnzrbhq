@@ -1,0 +1,557 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue" >
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/blue_btn_select"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btnsure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/blue_btn_select"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="16sp" 
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/photograph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/btnsure"
+            android:background="@drawable/blue_btn_select"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="gone"
+            android:text="拍照"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/ld_see_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/photograph"
+            android:background="@drawable/blue_btn_select"
+            android:gravity="center"
+            android:text="图片浏览"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="样地号："
+            android:textColor="#000000"
+            android:textSize="@dimen/larger_txtsize18" />
+
+        <TextView
+            android:id="@+id/ydh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="@dimen/larger_txtsize18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="样地位于："
+            android:textColor="#000000"
+            android:textSize="@dimen/larger_txtsize18" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="@dimen/larger_txtsize18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="驻地出发："
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="@dimen/larger_txtsize14" />
+
+            <Button
+                android:id="@+id/zdcf"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:background="@drawable/background_view_textview_selector"
+                android:textColor="#000000"
+                android:textSize="@dimen/larger_txtsize14" />
+        </LinearLayout>
+                <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:text="找到标桩："
+                android:singleLine="true"
+                android:gravity="right"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="@dimen/larger_txtsize14" />
+
+            <Button
+                android:id="@+id/zdyz"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:background="@drawable/background_view_textview_selector"
+                android:textColor="#000000"
+                android:textSize="@dimen/larger_txtsize14" />
+        </LinearLayout>
+                <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="调查结束："
+                android:singleLine="true"
+                android:gravity="right"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#000000"
+                android:textSize="@dimen/larger_txtsize14" />
+
+            <Button
+                android:id="@+id/dcjs"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:background="@drawable/background_view_textview_selector"
+                android:textColor="#000000"
+                android:textSize="@dimen/larger_txtsize14" />
+        </LinearLayout>
+                <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="返回驻地："
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:gravity="right"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="@dimen/larger_txtsize14" />
+
+            <Button
+                android:id="@+id/fhzd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:background="@drawable/background_view_textview_selector"
+                android:textColor="#000000"
+                android:textSize="@dimen/larger_txtsize14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/yddcjlb"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_view_textview_selector"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="样地调查记录表（封面）"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize18" />
+
+                <LinearLayout
+                    android:id="@+id/qianming"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_view_textview_selector"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="签名："
+                        android:textColor="#000000"
+                        android:textSize="@dimen/larger_txtsize18" />
+
+                    <ImageView
+                        android:id="@+id/qmimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/ydwzt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_view_textview_selector"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="样地位置图"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize18" />
+
+                <TextView
+                    android:id="@+id/yingdwzt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_view_textview_selector"
+                    android:padding="5dp"
+                    android:text="引点位置图"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/yxcldc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_view_textview_selector"
+                    android:padding="5dp"
+                    android:text="引线测量调查"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize18" />
+
+                <TextView
+                    android:id="@+id/zjcldc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_view_textview_selector"
+                    android:padding="5dp"
+                    android:text="周界测量调查"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/slzylxqc_ydyzdc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_view_textview_selector"
+                    android:padding="5dp"
+                    android:text="样地因子调查"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize18" />
+
+                <TextView
+                    android:id="@+id/kjldcjl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_view_textview_selector"
+                    android:padding="5dp"
+                    android:text="跨角林调查"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/mmjcdc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_view_textview_selector"
+                    android:padding="5dp"
+                    android:text="每木检尺调查"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize18" />
+
+                <TextView
+                    android:id="@+id/sgcljl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_view_textview_selector"
+                    android:padding="5dp"
+                    android:text="树（毛竹）高测量记录"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/slzhqkdc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_view_textview_selector"
+                    android:padding="5dp"
+                    android:text="森林灾害情况调查"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize18" />
+
+                <TextView
+                    android:id="@+id/zbdc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_view_textview_selector"
+                    android:padding="5dp"
+                    android:text="植被调查"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/xmdc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_view_textview_selector"
+                    android:padding="5dp"
+                    android:text="下木调查"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize18" />
+
+                <TextView
+                    android:id="@+id/trgxdc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_view_textview_selector"
+                    android:padding="5dp"
+                    android:text="天然更新调查"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/fcqlydbh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_view_textview_selector"
+                    android:padding="5dp"
+                    android:text="复查期内样地变化情况调查记录"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize18" />
+
+                <TextView
+                    android:id="@+id/wclzlddc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_view_textview_selector"
+                    android:padding="5dp"
+                    android:text="未成林造林地调查"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/gpshjdcjl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_view_textview_selector"
+                    android:padding="5dp"
+                    android:text="GPS航迹调查记录"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize18" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_view_textview_selector"
+                    android:padding="5dp"
+                    android:text="未成林造林地调查"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/larger_txtsize18"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

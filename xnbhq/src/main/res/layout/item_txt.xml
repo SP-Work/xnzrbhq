@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_view_rounded"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.3"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="30"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="X"
+        android:textColor="@color/balck"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.3"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Y"
+        android:textColor="@color/balck"
+        android:textSize="18sp" />
+    
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="30"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="时间"
+        android:textColor="@color/balck"
+        android:textSize="18sp" />
+    
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="30"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="描述"
+        android:textColor="@color/balck"
+        android:textSize="18sp" />
+
+</LinearLayout>

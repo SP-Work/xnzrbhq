@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+     <!-- 灾害类型-->
+    <dic tablename="ZHLX" >
+        <row id="00"  name="无灾害" />
+        <row id="10"  name="病虫害" />
+        <row id="11"  name="病害" />
+        <row id="12"  name="虫害" />
+        <row id="20"  name="火灾" />
+        <row id="21"  name="地表火" />
+        <row id="22"  name="树冠火" />
+        <row id="23"  name="地下火" />
+        <row id="30"  name="气候灾害" />
+        <row id="31"  name="风折(倒)" />
+        <row id="32"  name="雪压" />
+        <row id="33"  name="滑坡泥石流" />
+        <row id="34"  name="干旱"/>
+        <row id="35"  name="风雹"/>
+        <row id="36"  name="低温凝冻和雪灾"/>
+        <row id="40"  name="人为灾害"  />
+        <row id="41"  name="过度放牧"  />
+        <row id="42"  name="毁林开荒"  />
+        <row id="43"  name="过度砍伐"  />
+        <row id="44"  name="乱砍滥伐"  />
+        <row id="45"  name="盗伐"  />
+        <row id="50"  name="生态型灾害"  />
+        <row id="51"  name="水土流失"  />
+        <row id="52"  name="沙化"  />
+        <row id="53"  name="风蚀"  />
+        <row id="60"  name="洪涝"  />
+        <row id="70"  name="地震"  />
+        <row id="80"  name="其它生物灾害"  />
+        <row id="90"  name="其它灾害"  />
+    </dic>
+      <!-- 二调地类-->
+    <dic tablename="EDDL" >
+        <row id="1110"  name="乔木林地" />
+        <row id="1310"  name="特殊灌木林地" />
+        <row id="1320"  name="一般灌木林地" />
+        <row id="1130"  name="竹林地" />
+        <row id="1200"  name="疏林地" />
+        <row id="1410"  name="未成林造林地" />
+        <row id="1500"  name="苗圃地" />
+        <row id="1610"  name="采伐迹地" />
+        <row id="1620"  name="火烧迹地" />
+        <row id="1630"  name="其它迹地" />
+        <row id="1710"  name="造林失败地" />
+        <row id="1720"  name="规划造林地" />
+        <row id="1730"  name="其它宜林地" />
+        <row id="2000"  name="非林地" />
+        <row id="2100"  name="耕地" />
+        <row id="2200"  name="牧草地" />
+        <row id="2300"  name="水域" />
+        <row id="2400"  name="未利用地" />
+        <row id="2510"  name="工矿建设用地" />
+        <row id="2520"  name="城乡居民建设用地" />
+        <row id="2530"  name="交通建设用地" />
+        <row id="2540"  name="其它用地" />
+    </dic>
+     <!-- 林种 -->
+    <dic tablename="LINZHONG" >
+        <row id="100"  name="生态公益林" />
+        <row id="110"  name="防护林" />
+        <row id="111"  name="水源涵养林" />
+        <row id="112"  name="水土保持林" />
+        <row id="113"  name="防风固沙林" />
+        <row id="114"  name="农田牧场防护林" />
+        <row id="115"  name="护岸林" />
+        <row id="116"  name="护路林" />
+        <row id="117"  name="其它防护林" />
+        <row id="120"  name="特殊用途林" />
+        <row id="121"  name="国防林" />
+        <row id="122"  name="实验林" />
+        <row id="123"  name="母树林" />
+        <row id="124"  name="环境保护林" />
+        <row id="125"  name="风景林" />
+        <row id="126"  name="名胜古迹和革命纪念林" />
+        <row id="127"  name="自然保护林" />
+        <row id="200"  name="商品林" />
+        <row id="230"  name="用材林" />
+        <row id="231"  name="短轮伐期用材林" />
+        <row id="232"  name="速生丰产用材林" />
+        <row id="233"  name="一般用材林" />
+        <row id="240"  name="薪炭林" />
+        <row id="250"  name="经济林" />
+        <row id="251"  name="果树林" />
+        <row id="252"  name="食用原料林" />
+        <row id="253"  name="林化工业原料林" />
+        <row id="254"  name="药用林" />
+        <row id="255"  name="其它经济林" />
+    </dic>
+          <!-- 起源 -->
+    <dic tablename="QIYUAN" >
+        <row id="10"  name="天然" />
+        <row id="11"  name="纯天然" />
+        <row id="12"  name="人工促进" />
+        <row id="13"  name="萌生天然林" />
+        <row id="20"  name="人工" />
+        <row id="21"  name="值苗" />
+        <row id="22"  name="直播" />
+        <row id="23"  name="飞播" />
+        <row id="24"  name="萌生人工林" />
+    </dic>
+     <!--龄组-->
+    <dic tablename="LINGZU" >
+        <row id="1"  name="幼龄林" />
+        <row id="2"  name="中龄林" />
+        <row id="3"  name="近熟林" />
+        <row id="4"  name="成熟林" />
+        <row id="5"  name="过熟林" />
+    </dic>
+     <!-- 植被类型-->
+    <dic tablename="ZBLX" >
+        <row id="1"  name="乔灌草型" />
+        <row id="2"  name="乔灌型" />
+        <row id="3"  name="乔木型" />
+        <row id="4"  name="灌木型" />
+        <row id="5"  name="草丛型" />
+        <row id="6"  name="旱地作物型" />
+        <row id="7"  name="苔藓型" />
+        <row id="8"  name="无植被型" />
+    </dic>
+     <!-- 地类变化原因 -->
+    <dic tablename="DLBHYY" >
+        <row id="110"  name="采伐" />
+        <row id="121"  name="人工造林" />
+        <row id="122"  name="人工更新Ⅰ" />
+        <row id="123"  name="人工更新Ⅱ" />
+        <row id="124"  name="造林更新失败" />
+        <row id="130"  name="树种结构调整" />
+        <row id="141"  name="退耕还林" />
+        <row id="142"  name="其它规划调整" />
+        <row id="150"  name="征占用林地" />
+        <row id="160"  name="毁林开荒" />
+        <row id="170"  name="其它认为原因" />
+        <row id="210"  name="火灾" />
+        <row id="220"  name="病虫害" />
+        <row id="230"  name="其它灾害" />
+        <row id="311"  name="封山育林" />
+        <row id="312"  name="其它天然更新" />
+        <row id="320"  name="自然变化" />
+        <row id="330"  name="其它自然因素" />
+        <row id="410"  name="样地未复位" />
+        <row id="420"  name="特殊对待" />
+        <row id="430"  name="前期误判" />
+        <row id="440"  name="标准变化" />
+        <row id="500"  name="其它因素" />
+    </dic>
+     <!-- 森林等级代码表 -->
+    <dic tablename="SLJKD" >
+        <row id="1"  name="健康" />
+        <row id="2"  name="亚健康" />
+        <row id="3"  name="中健康" />
+        <row id="4"  name="不健康" />
+    </dic>
+     <!-- 森林灾害等级  -->
+    <dic tablename="ZHDJ" >
+        <row id="0"  name="无" />
+        <row id="1"  name="轻" />
+        <row id="2"  name="中" />
+        <row id="3"  name="重" />
+    </dic>
+    <!-- 未成林造林情况 -->
+    <dic tablename="wclzlqk" >
+        <row id="1"  name="人工造林成活率85%以上" />
+        <row id="2"  name="人工造林成活率41%-85%" />
+        <row id="4"  name="人工造林成活率41%-80%" />
+   </dic>
+     <!-- 林地所有权 -->
+    <dic tablename="LDSYQ" >
+        <row id="1"  name="国有" />
+        <row id="2"  name="集体" />
+    </dic>
+     <!-- 林木所有权 -->
+    <dic tablename="LMSYQ" >
+        <row id="1"  name="国有" />
+        <row id="2"  name="集体" />
+        <row id="3"  name="个体" />
+    </dic>
+       <!-- 森林群落结构 -->
+    <dic tablename="SLQLJG" >
+        <row id="1"  name="完整结构" />
+        <row id="2"  name="较完整结构" />
+        <row id="3"  name="简单结构" />
+    </dic>
+      <!-- 树种结构 -->
+    <dic tablename="SZJG" >
+        <row id="1"  name="针叶纯林" />
+        <row id="2"  name="阔叶纯林" />
+        <row id="3"  name="针叶相对纯林" />
+        <row id="4"  name="阔叶相对纯林" />
+        <row id="5"  name="针叶混交林" />
+        <row id="6"  name="针阔混交林" />
+        <row id="7"  name="阔叶混交林" />
+    </dic>
+      <!-- 商品林经营等级 -->
+    <dic tablename="SPLJYDJ" >
+        <row id="1"  name="好" />
+        <row id="2"  name="中" />
+        <row id="3"  name="差" />
+    </dic>
+     <!-- 市（地、州） -->
+    <dic tablename="SHI" >
+        <row id="520100"  name="贵阳市" />
+        <row id="520200"  name="六盘水市" />
+        <row id="520300"  name="遵义市" />
+        <row id="520400"  name="安顺市" />
+        <row id="522200"  name="铜仁市" />
+        <row id="522300"  name="黔西南州" />
+        <row id="522400"  name="毕节市" />
+        <row id="522600"  name="黔东南州" />
+        <row id="522700"  name="黔南州" />
+        <row id="522900"  name="其他单位" />
+    </dic>
+      <!-- 市（地、州） -->
+    <dic tablename="SHI" >
+        <row id="520100"  name="贵阳市" />
+        <row id="520200"  name="六盘水市" />
+        <row id="520300"  name="遵义市" />
+        <row id="520400"  name="安顺市" />
+        <row id="522200"  name="铜仁市" />
+        <row id="522300"  name="黔西南州" />
+        <row id="522400"  name="毕节市" />
+        <row id="522600"  name="黔东南州" />
+        <row id="522700"  name="黔南州" />
+        <row id="522900"  name="其他单位" />
+    </dic>
+    <!-- 县(市、区) -->
+    <dic tablename="XIAN" >
+        <row id="520102"  name="南明区" />
+        <row id="520103"  name="云岩区" />
+        <row id="520111"  name="花溪区" />
+        <row id="520112"  name="乌当区" />
+        <row id="520113"  name="白云区" />
+        <row id="520114"  name="观山湖区" />
+        <row id="520121"  name="开阳县" />
+        <row id="520122"  name="息烽县" />
+        <row id="520123"  name="修文县" />
+        <row id="520150"  name="扎佐林场" />
+        <row id="520151"  name="林科院实验林场" />
+        <row id="520181"  name="清镇市" />
+        <row id="520191"  name="贵安新区" />
+        <row id="520201"  name="钟山区" />
+        <row id="520203"  name="六枝特区" />
+        <row id="520221"  name="水城县" />
+        <row id="520222"  name="盘县" />
+        <row id="520302"  name="红花岗区" />
+        <row id="520303"  name="汇川区" />
+        <row id="520321"  name="遵义县" />
+        <row id="520322"  name="桐梓县" />
+        <row id="520323"  name="绥阳县" />
+        <row id="520324"  name="正安县" />
+        <row id="520325"  name="道真县" />
+        <row id="520326"  name="务川县" />
+        <row id="520327"  name="凤冈县" />
+        <row id="520328"  name="湄潭县" />
+        <row id="520329"  name="余庆县" />
+        <row id="520330"  name="习水县" />
+        <row id="520340"  name="习水管理局" />
+        <row id="520341"  name="宽阔水管理局" />
+        <row id="520342"  name="大沙河管理局" />
+        <row id="520381"  name="赤水市" />
+        <row id="520382"  name="仁怀市" />
+        <row id="520402"  name="西秀区" />
+        <row id="520421"  name="平坝县" />
+        <row id="520422"  name="普定县" />
+        <row id="520423"  name="镇宁县" />
+        <row id="520424"  name="关岭县" />
+        <row id="520425"  name="紫云县" />
+        <row id="522201"  name="碧江区" />
+        <row id="522222"  name="江口县" />
+        <row id="522223"  name="玉屏县" />
+        <row id="522224"  name="石阡县" />
+        <row id="522225"  name="思南县" />
+        <row id="522226"  name="印江县" />
+        <row id="522227"  name="德江县" />
+        <row id="522228"  name="沿河县" />
+        <row id="522229"  name="松桃县" />
+        <row id="522230"  name="万山区" />
+        <row id="522240"  name="梵净山管理局" />
+        <row id="522241"  name="麻阳河管理局" />
+        <row id="522301"  name="兴义市" />
+        <row id="522322"  name="兴仁市" />
+        <row id="522323"  name="普安县" />
+        <row id="522324"  name="晴隆县" />
+        <row id="522325"  name="贞丰县" />
+        <row id="522326"  name="望谟县" />
+        <row id="522327"  name="册享县" />
+        <row id="522328"  name="安农县" />
+        <row id="522401"  name="七星关区" />
+        <row id="522422"  name="大方县" />
+        <row id="522423"  name="黔西县" />
+        <row id="522424"  name="金沙县" />
+        <row id="522425"  name="织金县" />
+        <row id="522426"  name="纳雍县" />
+        <row id="522427"  name="威宁县" />
+        <row id="522428"  name="赫章县" />
+        <row id="522601"  name="凯里市" />
+        <row id="522622"  name="黄平县" />
+        <row id="522623"  name="施秉县" />
+        <row id="522624"  name="三穗县" />
+        <row id="522625"  name="镇远县" />
+        <row id="522626"  name="岑巩县" />
+        <row id="522627"  name="天柱县" />
+        <row id="522628"  name="锦屏县" />
+        <row id="522629"  name="剑河县" />
+    </dic>
+		<!-- 立木类型-->
+	<dic tablename="LMLX">
+	    <row id="10" name="林木" />
+	    <row id="11" name="乔木林地林木"/>
+	    <row id="12" name="疏林地林木"/>
+	    <row id="20" name="散生木"/>
+	    <row id="21" name="竹林地、乔木幼中林内散生木"/>
+	    <row id="22" name="其它地类散生木"/>
+	    <row id="30" name="四旁树"/>
+	</dic>
+		<!-- 检尺类型-->
+	<dic tablename="JCLX">
+	    <row id="1" name="改设样地或复测样地上未复位的保留木和新增检尺对象" />
+	    <row id="10" name="大苗移栽造成的新增样木"/>
+	    <row id="11" name="保留木"/>
+	    <row id="12" name="进界木"/>
+	    <row id="13" name="枯立木"/>
+	    <row id="14" name="采伐木"/>
+	    <row id="15" name="枯倒木"/>
+	    <row id="16" name="漏测木"/>
+	    <row id="17" name="多测木"/>
+	    <row id="18" name="胸径错测木"/>
+	    <row id="19" name="树种错测木"/>
+	    <row id="20" name="类型错测木"/>
+	</dic>
+		<!--定位点-->
+	<dic tablename="DWD">
+	    <row id="0" name="西南角点" />
+	    <row id="1" name="西北角点"/>
+	    <row id="2" name="东北角点"/>
+	    <row id="3" name="东南角点"/>
+	    <row id="4" name="中心点"/>
+	</dic>
+	<!--采伐管理类型-->
+	<dic tablename="CFGLLX">
+	    <row id="11" name="林业部门管理林木" />
+	    <row id="12" name="非林业部门管理林木"/>
+	    <row id="20" name="不纳入采伐限额管理林木"/>
+	</dic>
+		<!--林层-->
+	<dic tablename="LINCENG">
+	    <row id="10" name="样地林层" />
+	    <row id="11" name="单层林"/>
+	    <row id="12" name="复层林"/>
+	    <row id="20" name="样木林层"/>
+	    <row id="21" name="单层林"/>
+	    <row id="22" name="复层林主林层"/>
+	    <row id="23" name="复层林次林层"/>
+	</dic>
+		<!-- 样地类别-->
+	<dic tablename="YDLB" type="1">
+	    <row id="1" name="长江流域" />
+	    <row id="2" name="金沙江水系"/>
+	</dic>
+</root>

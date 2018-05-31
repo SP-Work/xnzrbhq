@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@drawable/left_edit"
+            android:contentDescription="@null"
+            android:padding="20dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/center_edit"
+            android:contentDescription="@null"
+            android:padding="20dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@drawable/right_edit"
+            android:contentDescription="@null"
+            android:padding="20dp"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/addfeature"
+            style="@style/radiobtn_style_l"
+            android:drawableTop="@drawable/xbbj_add"
+            android:onClick="addFeature"
+            android:gravity="bottom"
+            android:text="新增小班"/>
+
+        <RadioButton
+            android:id="@+id/addfeaturegb"
+            style="@style/radiobtn_style_l"
+            android:drawableTop="@drawable/xbbj_addgb"
+            android:onClick="addFeatureGb"
+            android:text="共边增班"/>
+
+        <RadioButton
+            android:id="@+id/copyButton"
+            style="@style/radiobtn_style_l"
+            android:drawableTop="@drawable/xbbj_copy"
+            android:onClick="copyFeature"
+            android:text="复制图斑"/>
+
+        <RadioButton
+            style="@style/radiobtn_style_l"
+            android:background="@drawable/xbbj_add"
+            android:onClick="addX"
+            android:visibility="gone"/>
+
+        <RadioButton
+            android:id="@+id/savebutton"
+            style="@style/radiobtn_style_l"
+            android:background="@drawable/xbbj_add"
+            android:enabled="false"
+            android:onClick="saveButton"
+            android:visibility="gone"/>
+
+        <RadioButton
+            android:id="@+id/deleteButton"
+            style="@style/radiobtn_style_l"
+            android:drawableTop="@drawable/xbbj_delete"
+            android:onClick="deleteFeature"
+            android:text="删除图斑"/>
+
+        <RadioButton
+            android:id="@+id/repealButton"
+            style="@style/radiobtn_style_l"
+            android:drawableTop="@drawable/xbbj_chexiao"
+            android:gravity="center"
+            android:onClick="repealFeature"
+            android:text="撤销" />
+
+        <RadioButton
+            android:id="@+id/qiegeButton"
+            style="@style/radiobtn_style_l"
+            android:drawableTop="@drawable/xbbj_qiege"
+            android:onClick="qiegeFeature"
+            android:text="切割图斑"/>
+
+        <RadioButton
+            android:id="@+id/hebingButton"
+            style="@style/radiobtn_style_l"
+            android:drawableTop="@drawable/xbbj_hebing"
+            android:onClick="mergeFeature"
+            android:text="合并图斑"/>
+
+        <RadioButton
+            android:id="@+id/xiubanButton"
+            style="@style/radiobtn_style_l"
+            android:drawableTop="@drawable/xbbj_xiub"
+            android:gravity="center"
+            android:onClick="xiubFeature"
+            android:text="修班"/>
+
+        <RadioButton
+            android:id="@+id/attributButton"
+            style="@style/radiobtn_style_l"
+            android:drawableTop="@drawable/xbbj_attribte"
+            android:text="属性编辑"
+            android:onClick="attributeFeture"/>
+
+        <RadioButton
+            android:id="@+id/selectButton"
+            style="@style/radiobtn_style_l"
+            android:drawableTop="@drawable/xbbj_select"
+            android:text="选择小班"
+            android:onClick="selectFeature"/>
+
+        <RadioButton
+            style="@style/radiobtn_style_l"
+            android:drawableTop="@drawable/xbbj_mapremove"
+            android:text="平移"
+            android:gravity="center"
+            android:onClick="mapRemove"/>
+
+        <RadioButton
+            style="@style/radiobtn_style_l"
+            android:drawableTop="@drawable/xbbj_save"
+            android:text="保存"
+            android:gravity="center"
+            android:onClick="saveFeature"
+            android:visibility="gone"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/xbbj_exit"
+            android:button="@null"
+            android:onClick="exitedit"
+            android:visibility="gone"/>
+    </RadioGroup>
+
+</FrameLayout>

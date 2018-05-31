@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/mcjy_yszcx"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/background_view_rounded_blue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginRight="0.5dp"
+        android:text="@string/mcjy_yszcx"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize20" />
+
+    <TextView
+        android:id="@+id/mcjy_qyxxcj"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/background_view_rounded_blue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginLeft="0.5dp"
+        android:layout_marginRight="0.5dp"
+        android:text="@string/mcjy_qyxxcj"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize20" />
+
+    <TextView
+        android:id="@+id/mcjy_xkzcx"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/background_view_rounded_blue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginRight="0.5dp"
+        android:text="@string/mcjy_xkzcx"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize20" />
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<html>
+<!-- ECharts单文件引入 -->
+<script src="./echart/echarts.js"></script>
+<script language="javascript">
+
+ <!--$(function() {-->
+            <!--alert("2");-->
+            <!--loadscript();-->
+            <!--//setchart("贵州省");-->
+        <!--});-->
+        window.onload=function(){
+           var option = JSON.parse(Android.setGsonOption());
+           initchart(option);
+           alert(option);
+        }
+        //初始化
+        function initchart(option){
+                var mapChart=echarts.init(document.getElementById('main'));
+                // 为echarts对象加载数据
+                mapChart.setOption(option);
+        }
+        function getoption(name){
+           var reg=new RegExp("(^|&)"+name+"=([^&]*)(&|$)");
+           var r=window.location.search.substr(1).match(reg);
+           if(r!=null){
+           return unescape(r[2]);
+           }
+           return null;
+        }
+
+        function setchart(option) {
+             // 必须加JOSN.parse 转换数据类型
+               //var option = JSON.parse(option);
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = echarts.init(document.getElementById('main'));
+                // 为echarts对象加载数据
+                myChart.setOption(option);
+            }
+         function loadALineChart(){
+            // 必须加JOSN.parse 转换数据类型
+            var option = JSON.parse(Android.setGsonOption());
+            var chart2Doc = document.getElementById('main');
+            var myChart2 = require('echarts').init(chart2Doc);
+
+            myChart2.setOption(t);
+            //document.getElementById('textcontent').innerHTML=option;
+            //toast(option);
+        }
+
+    </script>
+<body>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="main" style="height:100%">
+    <a>hello world</a>
+</div>
+<button onClick="loadALineChart()" style="height:40px">线状图</button>
+</body>
+</html>

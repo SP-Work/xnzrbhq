@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tw_wifioffload_buttonbarbutton_selector_disabled_holo_light"
+    android:orientation="vertical" >
+
+    <com.otitan.xnbhq.color.SansumColorSelecter
+        android:id="@+id/color_seleter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/render_btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_button"
+        android:button="@null"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:text="@string/sure"
+        android:visibility="gone"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/larger_txtsize20" />
+
+</RelativeLayout>

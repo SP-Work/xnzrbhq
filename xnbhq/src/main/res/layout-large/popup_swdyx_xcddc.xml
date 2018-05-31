@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/swdyx_xyfzjd_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded_image"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="驯养繁殖基地管理"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize16" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/swdyx_jhz_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded_image"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="救护站信息管理"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize16" />
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/swdyx_jydwdw_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded_image"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="经营动物单位管理"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize16" />
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/swdyx_bbg_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded_image"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="标本馆管理"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize16" />
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/swdyx_cg_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded_image"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="餐馆管理"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize16" />
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/swdyx_yyybjcz_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded_image"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="疫源疫病监测站管理"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize16" />
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/swdyx_jysc_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/background_view_rounded_image"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="交易市场管理"
+            android:textColor="@color/white"
+            android:textSize="@dimen/larger_txtsize16" />
+    </LinearLayout>
+
+</LinearLayout>

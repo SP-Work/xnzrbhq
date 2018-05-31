@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:background="@color/white"
+    android:gravity="left|center"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/xyfzjd_tv1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="序号"
+        android:textColor="@color/balck"
+        android:textSize="@dimen/larger_txtsize16" />
+
+    <TextView
+        android:id="@+id/xyfzjd_tv2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/jidiname"
+        android:textColor="@color/balck"
+        android:textSize="@dimen/larger_txtsize16" />
+
+    <TextView
+        android:id="@+id/xyfzjd_tv3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/jidixingzhi"
+        android:textColor="@color/balck"
+        android:textSize="@dimen/larger_txtsize16" />
+
+    <TextView
+        android:id="@+id/xyfzjd_tv4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/jididizhi"
+        android:textColor="@color/balck"
+        android:textSize="@dimen/larger_txtsize16" />
+
+    <TextView
+        android:id="@+id/xyfzjd_tv5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/jidiheader"
+        android:textColor="@color/balck"
+        android:textSize="@dimen/larger_txtsize16" />
+
+    <TextView
+        android:id="@+id/xyfzjd_tv6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/lianxifangshi"
+        android:textColor="@color/balck"
+        android:textSize="@dimen/larger_txtsize16" />
+
+    <TextView
+        android:id="@+id/xyfzjd_tv7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/dengjishijian"
+        android:textColor="@color/balck"
+        android:textSize="@dimen/larger_txtsize16" />
+
+    <TextView
+        android:id="@+id/xyfzjd_tv8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/jydwfw"
+        android:textColor="@color/balck"
+        android:textSize="@dimen/larger_txtsize16" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/xyfzjd_tv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_rounded_image"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="2dp"
+            android:paddingTop="8dp"
+            android:text="查看"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/larger_txtsize16" />
+
+        <TextView
+            android:id="@+id/xyfzjd_tv10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_rounded_image"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="8dp"
+            android:text="编辑"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/larger_txtsize16" />
+
+        <TextView
+            android:id="@+id/xyfzjd_tv11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view_rounded_image"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:text="定位"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/larger_txtsize16" />
+    </LinearLayout>
+
+</LinearLayout>

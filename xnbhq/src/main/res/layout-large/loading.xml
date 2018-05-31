@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80.0dip"
+    android:layout_height="80.0dip" >
+
+    <ImageView
+        android:id="@+id/loading_pic_bigView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:background="@drawable/loading_gray" />
+
+    <ImageView
+        android:id="@+id/loading_pic_big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:src="@drawable/operating" />
+
+</FrameLayout>

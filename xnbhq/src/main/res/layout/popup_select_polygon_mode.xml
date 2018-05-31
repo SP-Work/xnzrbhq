@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_view_rounded"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/add_mode_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="点勾绘"
+        android:textColor="@color/balck"
+        android:textSize="@dimen/larger_txtsize18" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/add_mode_polygon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="自由曲线勾绘"
+        android:textColor="@color/balck"
+        android:textSize="@dimen/larger_txtsize18" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/add_mode_gps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_view_rounded"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="GPS勾绘"
+        android:textColor="@color/balck"
+        android:textSize="@dimen/larger_txtsize18" />
+
+</LinearLayout>

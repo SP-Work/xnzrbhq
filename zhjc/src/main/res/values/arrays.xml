@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="timelist">
+        <item>十二五期间</item>
+        <item>2016年</item>
+    </array>
+
+    <array name="seltype">
+        <item>行政区划</item>
+        <item>山脉</item>
+        <item>流域</item>
+        <item>少数民族</item>
+    </array>
+
+
+
+
+</resources>

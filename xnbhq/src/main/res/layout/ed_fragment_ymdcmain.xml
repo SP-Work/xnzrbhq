@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <LinearLayout 
+       android:id="@+id/ym_l1"
+       android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="right"
+    >
+    <TextView
+            android:id="@+id/tv_ymadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="添加样木"
+            android:textColor="@color/blue"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_view_rounded"
+            android:textSize="@dimen/larger_txtsize20"
+            android:textStyle="bold" />
+       
+   </LinearLayout>
+    <ListView
+        android:id="@+id/ymdc_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ym_l1"
+        />
+
+</RelativeLayout>

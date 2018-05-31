@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/share_gps_start"
+        style="@style/imgbutton_style"
+        android:background="@drawable/background_view_rounded_blue"
+        android:contentDescription="@null"
+        android:onClick="gpstart"
+        android:padding="10dp"
+        android:text="开始"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/share_gps_suspend"
+        style="@style/imgbutton_style"
+        android:background="@drawable/background_view_rounded_blue"
+        android:contentDescription="@null"
+        android:onClick="gpsuspend"
+        android:padding="10dp"
+        android:text="暂停"
+        android:textColor="@color/white"
+        android:enabled="false"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/share_gps_stop"
+        style="@style/imgbutton_style"
+        android:background="@drawable/background_view_rounded_blue"
+        android:contentDescription="@null"
+        android:onClick="gpstop"
+        android:padding="10dp"
+        android:text="结束"
+        android:textColor="@color/white"
+        android:enabled="false"
+        android:textSize="18sp" />
+
+</LinearLayout>

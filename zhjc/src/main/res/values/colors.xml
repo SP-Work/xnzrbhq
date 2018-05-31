@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <color name="colorPrimary">#3F51B5</color>
+     <color name="colorPrimaryDark">#303F9F</color>
+     <color name="colorAccent">#FF4081</color>-->
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent1">#F4632D</color>
+    <color name="gray">#999999</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="headcolor">#03a64b</color>
+    <color name="linecolor">#d6d6d6</color>
+    <color name="bgcolor">#f2f2f2</color>
+    <color name="txcolor">#666666</color>
+    <color name="lightyellow">#fa905b</color>
+    <color name="breakyellow">#f8793a</color>
+
+    /*面积配色*/
+    <color name="color_mj_1">#cde6c7</color>
+    <color name="color_mj_2">#78a355</color>
+    <color name="color_mj_3">#7fb80e</color>
+    <color name="color_mj_4">#b2d235</color>
+    <color name="color_mj_5">#1d953f</color>
+    /*资金配色*/
+    <color name="color_zj_1">#009ad6</color>
+    <color name="color_zj_2">#145b7d</color>
+    <color name="color_zj_3">#7bbfea</color>
+    <color name="color_zj_4">#228fbd</color>
+    <color name="color_zj_5">#33a3dc</color>
+    /*其他资源配色*/
+    <color name="color_qt_1">#13b228</color>
+    <color name="color_qt_2">#5cd341</color>
+    <color name="color_qt_3">#77e060</color>
+    <color name="color_qt_4">#9aea88</color>
+    <color name="color_qt_5">#baf2ae</color>
+
+</resources>

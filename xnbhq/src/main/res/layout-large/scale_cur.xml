@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--比例尺-->
+    <TextView
+        android:id="@+id/mapScaleValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:background="@color/transparent"
+        android:text="比例尺"
+        android:textColor="@color/red"/>
+
+    <!--当前坐标值-->
+    <TextView
+        android:id="@+id/mylocationValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mapScaleValue"
+        android:layout_gravity="left|bottom"
+        android:background="@color/transparent"
+        android:text="坐标"
+        android:textColor="@color/red"/>
+
+</android.support.percent.PercentRelativeLayout>

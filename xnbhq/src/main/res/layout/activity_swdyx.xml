@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activity.SwdyxActivity" >
+
+    <include
+        android:id="@+id/swdyx_base"
+        layout="@layout/activity_base" />
+
+    <include
+        android:id="@+id/swdyx_bottomview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/swdyx_bootem_view" />
+
+</RelativeLayout>

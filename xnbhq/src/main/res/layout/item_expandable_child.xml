@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/cb_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:focusable="false"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/id_child_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:textColor="@color/balck"/>
+
+    <ImageView
+        android:id="@+id/featurelayer_extent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:background="@drawable/background_view_rounded_image"
+        android:contentDescription="@null"
+        android:padding="5dp"
+        android:src="@drawable/wb_feed_icon_gps" />
+
+</LinearLayout>
