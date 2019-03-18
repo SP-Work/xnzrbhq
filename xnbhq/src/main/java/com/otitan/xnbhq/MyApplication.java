@@ -10,6 +10,7 @@ import android.os.Message;
 import android.provider.Settings.Secure;
 import android.support.multidex.MultiDex;
 
+import com.otitan.xnbhq.entity.MyObjectBox;
 import com.otitan.xnbhq.service.Webservice;
 import com.otitan.xnbhq.util.ConnectionChangeReceiver;
 import com.otitan.xnbhq.util.NetUtil;
@@ -27,6 +28,9 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+
+import io.objectbox.BoxStore;
+import io.objectbox.android.AndroidObjectBrowser;
 
 /**
  * 自定义Application
@@ -47,6 +51,8 @@ public class MyApplication extends Application {
 	private ConnectionChangeReceiver mNetworkStateReceiver;
 
 	private static MyApplication instance = null;
+
+	public static BoxStore boxStore = null;
 
 	public static MyApplication getInstance(){
 		return instance;
@@ -105,6 +111,13 @@ public class MyApplication extends Application {
 		crashHandler.init(this);
 
 		ZXingLibrary.initDisplayOpinion(this);
+
+		//ObjectBox初始化
+		boxStore = MyObjectBox.builder().androidContext(this).build();
+		if (BuildConfig.DEBUG) {
+			//打开调试信息
+			new AndroidObjectBrowser(boxStore).start(this);
+		}
 	}
 
 	/**

@@ -748,8 +748,6 @@
     <!---->
     <string name="system_name">西南自然保护区移动巡检平台</string>
 
-
-
     <!--top-->
     <string name="tucengkongzhi">图层控制</string>
     <string name="xiaobanqingdan">小班清单</string>
@@ -765,6 +763,12 @@
     <string name="xinjiantuceng">新建图层</string>
     <string name="shijianshangbao">事件上报</string>
 
+    <!--登录-->
+    <string name="login_username">用户名</string>
+    <string name="login_password">密码</string>
+    <string name="login_login">登录</string>
+    <string name="login_organizer">主办单位：国家林业局昆明勘察设计院</string>
+    <string name="login_technical_support">技术支持：北京航天泰坦科技股份有限公司</string>
 
     <string name="title_online">http://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer</string>
     <string name="image_online">http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer</string>

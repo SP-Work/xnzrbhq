@@ -724,4 +724,15 @@ public class ResourcesManager implements Serializable {
 		}
 	}
 
+	public String getShpFile(){
+		String path = "/shp/sheng/";
+		String  f = getFolderPath(path);
+		File[] files = new File(f).listFiles();
+		for(File file : files){
+			if(file.getName().endsWith(".shp")){
+				return file.getPath();
+			}
+		}
+		return "";
+	}
 }

@@ -1887,6 +1887,11 @@
     <string name="location">定位</string>
     <string name="location_perssion">定位权限</string>
     <string name="locationsuccess">定位成功</string>
+    <string name="login_login">登录</string>
+    <string name="login_organizer">主办单位：国家林业局昆明勘察设计院</string>
+    <string name="login_password">密码</string>
+    <string name="login_technical_support">技术支持：北京航天泰坦科技股份有限公司</string>
+    <string name="login_username">用户名</string>
     <string name="lon">经度：</string>
     <string name="lon1">经度1：</string>
     <string name="longorlannull">定位失败，经度值或纬度值为空</string>
@@ -1946,6 +1951,8 @@
     <string name="nsjl_xkzh_title">许可证号:</string>
     <string name="nslcfl">NSLCFL</string>
     <string name="nslcfxe">NSLCFXE</string>
+    <string name="objectbox_objectBrowserNotificationText">Running on port %1$d. Tap to open in the device\'s browser. Or run "adb forward tcp:%1$d tcp:%1$d" to forward the port to your host.</string>
+    <string name="objectbox_objectBrowserNotificationTitle">ObjectBox Browser</string>
     <string name="pass">通过</string>
     <string name="password_toggle_content_description">Toggle password visibility</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>

@@ -8,15 +8,15 @@ package com.titan.versionupdata;
 
 public final class R {
     public static final class drawable {
-        public static final int progressbar_shape = 0x7f08011d;
-        public static final int toast_bg = 0x7f08015f;
+        public static final int progressbar_shape = 0x7f08012c;
+        public static final int toast_bg = 0x7f08016f;
     }
     public static final class id {
-        public static final int down_cancle_btn = 0x7f0900e0;
-        public static final int update_progress = 0x7f09052c;
+        public static final int down_cancle_btn = 0x7f0900e1;
+        public static final int update_progress = 0x7f090558;
     }
     public static final class layout {
-        public static final int dialog_download_apk = 0x7f0b0060;
+        public static final int dialog_download_apk = 0x7f0b0062;
     }
     public static final class string {
         public static final int app_name = 0x7f0e0042;

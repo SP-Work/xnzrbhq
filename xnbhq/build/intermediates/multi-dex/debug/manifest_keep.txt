@@ -1,3 +1,2 @@
-# Referenced at G:\workspace\xnzrbhq\xnbhq\build\intermediates\manifests\full\debug\AndroidManifest.xml:51
+# Referenced at G:\work\XN\xnzrbhq\xnbhq\build\intermediates\manifests\full\debug\AndroidManifest.xml:57
 -keep class com.otitan.xnbhq.MyApplication { <init>(...); }
-

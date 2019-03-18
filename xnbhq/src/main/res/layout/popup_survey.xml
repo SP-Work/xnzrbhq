@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!--野生动物调查、有害生物调查、调查组-->
+    <TextView
+        android:id="@+id/tv_group"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background_view_rounded_image"
+        android:gravity="center"
+        android:padding="7dp"
+        android:text="调查组"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize16"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tv_harmful"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background_view_rounded_image"
+        android:gravity="center"
+        android:padding="7dp"
+        android:text="有害生物调查"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize16" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tv_point"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background_view_rounded_image"
+        android:gravity="center"
+        android:padding="7dp"
+        android:text="踏查点"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize16" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tv_printer"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background_view_rounded_image"
+        android:gravity="center"
+        android:padding="7dp"
+        android:text="打印"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_txtsize16" />
+</LinearLayout>

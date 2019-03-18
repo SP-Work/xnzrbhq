@@ -57,12 +57,12 @@ import com.esri.android.map.LocationDisplayManager;
 import com.esri.android.map.MapOnTouchListener;
 import com.esri.android.map.MapView;
 import com.esri.android.map.TiledLayer;
-import com.esri.android.map.ags.ArcGISLocalTiledLayer;
 import com.esri.android.map.event.OnStatusChangedListener;
 import com.esri.android.map.event.OnZoomListener;
 import com.esri.android.runtime.ArcGISRuntime;
 import com.esri.core.geodatabase.GeodatabaseFeature;
 import com.esri.core.geodatabase.GeodatabaseFeatureTable;
+import com.esri.core.geodatabase.ShapefileFeatureTable;
 import com.esri.core.geometry.Envelope;
 import com.esri.core.geometry.Geometry;
 import com.esri.core.geometry.GeometryEngine;
@@ -76,6 +76,7 @@ import com.esri.core.map.FeatureTemplate;
 import com.esri.core.map.Field;
 import com.esri.core.map.Graphic;
 import com.esri.core.renderer.Renderer;
+import com.esri.core.renderer.SimpleRenderer;
 import com.esri.core.symbol.FillSymbol;
 import com.esri.core.symbol.LineSymbol;
 import com.esri.core.symbol.MarkerSymbol;
@@ -92,7 +93,6 @@ import com.esri.core.tasks.na.RouteTask;
 import com.esri.core.tasks.na.StopGraphic;
 import com.esri.core.tasks.query.Order;
 import com.esri.core.tasks.query.QueryParameters;
-import com.github.abel533.echarts.Geo;
 import com.lling.photopicker.PhotoPickerActivity;
 import com.otitan.xnbhq.adapter.FeatureArraysAdapter;
 import com.otitan.xnbhq.adapter.FeatureResultAdapter;
@@ -105,9 +105,13 @@ import com.otitan.xnbhq.dialog.CoordinateDialog;
 import com.otitan.xnbhq.dialog.EditPhotoDialog;
 import com.otitan.xnbhq.dialog.FeatureDelDialog;
 import com.otitan.xnbhq.dialog.GpsSetDialog;
+import com.otitan.xnbhq.dialog.GroupDialog;
+import com.otitan.xnbhq.dialog.HarmfulDialog;
 import com.otitan.xnbhq.dialog.JjxxsbDialog;
 import com.otitan.xnbhq.dialog.LayerSelectDialog;
 import com.otitan.xnbhq.dialog.MergeFeatureDialog;
+import com.otitan.xnbhq.dialog.PointDialog;
+import com.otitan.xnbhq.dialog.PrinterDialog;
 import com.otitan.xnbhq.dialog.RenderSetDialog;
 import com.otitan.xnbhq.dialog.ResultAreaDialog;
 import com.otitan.xnbhq.dialog.SettingDialog;
@@ -145,6 +149,7 @@ import com.otitan.xnbhq.util.BussUtil;
 import com.otitan.xnbhq.util.ConverterUtil;
 import com.otitan.xnbhq.util.GeometryEngineUtil;
 import com.otitan.xnbhq.util.PadUtil;
+import com.otitan.xnbhq.util.ResourcesManager;
 import com.otitan.xnbhq.util.SpatialUtil;
 import com.otitan.xnbhq.util.SymbolUtil;
 import com.otitan.xnbhq.util.SytemUtil;
@@ -161,6 +166,7 @@ import org.osgeo.proj4j.ProjCoordinate;
 import org.xmlpull.v1.XmlPullParser;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -407,7 +413,7 @@ public abstract class BaseActivity extends AppCompatActivity implements LayerSel
         //featureLayerList.clear();
         //featureLayer = null;
 
-
+        addShp();
     }
 
     public abstract View getParentView();
@@ -477,6 +483,9 @@ public abstract class BaseActivity extends AppCompatActivity implements LayerSel
         /*新建图层*/
         TextView addlayer = (TextView) childview.findViewById(R.id.top_addnewlayer);
         addlayer.setOnClickListener(this);
+        /*野外调查*/
+        TextView tv_survey = (TextView) childview.findViewById(R.id.tv_survey);
+        tv_survey.setOnClickListener(this);
         /**========================================================================*/
         /*图层控制按钮*/
         TextView tckzImgView = (TextView) childview.findViewById(R.id.tckz_imageview);
@@ -580,6 +589,25 @@ public abstract class BaseActivity extends AppCompatActivity implements LayerSel
                 mapscaleValue.setText(txt);
             }
         });
+    }
+
+    private void addShp(){
+        String path = ResourcesManager.getInstance(this).getShpFile();
+        try {
+            ShapefileFeatureTable table = new ShapefileFeatureTable(path);
+            FeatureLayer layer = new FeatureLayer(table);
+            layer.setEnableLabels(true);
+
+            SimpleFillSymbol fillSymbol = new SimpleFillSymbol(Color.RED, SimpleFillSymbol.STYLE.SOLID);
+            SimpleRenderer renderer = new SimpleRenderer(fillSymbol);
+            layer.setRenderer(renderer);
+            mapView.addLayer(layer);
+            MyLayer myLayer = new MyLayer();
+            myLayer.setLayer(layer);
+            layerNameList.add(myLayer);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -1563,6 +1591,39 @@ public abstract class BaseActivity extends AppCompatActivity implements LayerSel
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.tv_survey: // 野外调查
+                MorePopWindow surveyPopup = new MorePopWindow(this, R.layout.popup_survey);
+                surveyPopup.showPopupWindow(surveyPopup, personCenter);
+
+                View tv_group = surveyPopup.getContentView().findViewById(R.id.tv_group);
+                tv_group.setOnClickListener(this);
+
+                View tv_harmful = surveyPopup.getContentView().findViewById(R.id.tv_harmful);
+                tv_harmful.setOnClickListener(this);
+
+                View tv_point = surveyPopup.getContentView().findViewById(R.id.tv_point);
+                tv_point.setOnClickListener(this);
+
+                View tv_printer = surveyPopup.getContentView().findViewById(R.id.tv_printer);
+                tv_printer.setOnClickListener(this);
+                break;
+            case R.id.tv_group:
+                GroupDialog groupDialog = new GroupDialog(mContext, R.style.Dialog);
+                BussUtil.setDialogParams(mContext, groupDialog, 0.5, 0.8);
+                break;
+            case R.id.tv_harmful:
+                HarmfulDialog harmfulDialog = new HarmfulDialog(mContext, R.style.Dialog);
+                BussUtil.setDialogParams(mContext, harmfulDialog, 0.5, 0.8);
+                break;
+            case R.id.tv_point:
+                PointDialog pointDialog = new PointDialog(mContext, R.style.Dialog);
+                BussUtil.setDialogParams(mContext, pointDialog, 0.5, 0.8);
+                break;
+            case R.id.tv_printer:
+                PrinterDialog printerDialog = new PrinterDialog(mContext, R.style.Dialog);
+                BussUtil.setDialogParams(mContext, printerDialog, 0.5, 0.8);
+                break;
+
             case R.id.share_sbsj:
                 //事件上报
                 showSbsjDialog();
