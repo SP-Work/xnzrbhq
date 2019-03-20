@@ -119,6 +119,12 @@
             android:visibility="gone"
             android:drawableTop="@drawable/add_newlayer" />
 
+        <TextView
+            android:id="@+id/tv_survey"
+            style="@style/topbar_style_l"
+            android:text="野外调查"
+            android:drawableTop="@drawable/add_newlayer" />
+
     </LinearLayout>
 
 </FrameLayout>

@@ -20,9 +20,9 @@ public final class R {
         public static final int bottom = 0x7f090043;
         public static final int lay_down = 0x7f0901db;
         public static final int left = 0x7f0901ea;
-        public static final int pull_out = 0x7f09029a;
-        public static final int right = 0x7f090306;
-        public static final int top = 0x7f0904c9;
+        public static final int pull_out = 0x7f09029b;
+        public static final int right = 0x7f090307;
+        public static final int top = 0x7f0904cd;
     }
     public static final class styleable {
         public static final int[] SwipeLayout = { 0x7f040040, 0x7f040052, 0x7f04007e, 0x7f04010e, 0x7f040140, 0x7f04014e, 0x7f04019e };

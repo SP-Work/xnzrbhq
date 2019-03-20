@@ -770,7 +770,9 @@
     <string name="login_organizer">主办单位：国家林业局昆明勘察设计院</string>
     <string name="login_technical_support">技术支持：北京航天泰坦科技股份有限公司</string>
 
-    <string name="title_online">http://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer</string>
-    <string name="image_online">http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer</string>
+    <!--<string name="title_online">http://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer</string>-->
+    <string name="image_online">http://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer</string>
+    <!--<string name="image_online">http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer</string>-->
+    <string name="title_online">http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer</string>
 
 </resources>

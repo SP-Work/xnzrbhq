@@ -185,6 +185,11 @@ public abstract class BaseActivity extends AppCompatActivity implements LayerSel
 
 
     public ArrayList<String> picList = new ArrayList<>();
+    public ArrayList<String> picListPoint = new ArrayList<>();
+    public ArrayList<String> picListPrint = new ArrayList<>();
+    private PointDialog pointDialog;
+    private PrinterDialog printerDialog;
+
     public JjxxsbDialog getJjxxsbDialog() {
         return jjxxsbDialog;
     }
@@ -231,7 +236,7 @@ public abstract class BaseActivity extends AppCompatActivity implements LayerSel
     /* 当前位置点 */
     public static Point currentPoint = new Point(0, 0);
     /*当前位置gps点*/
-    public Point gpspoint = new Point(0,0);
+    public static Point gpspoint = new Point(0,0);
     /* 导航终点*/
     private Point navstopoint = new Point(0, 0);
     /* 自动定位绘制误差圆及中心点 */
@@ -334,6 +339,8 @@ public abstract class BaseActivity extends AppCompatActivity implements LayerSel
     private static final int ALBUM = 0x000002;
     public static final int TAKE_PHOTO = 0x000001;
     public static final int PICK_PHOTO = 0x000003;
+    public static final int PICK_PHOTO_POINT = 0x000004;
+    public static final int PICK_PHOTO_PRINT = 0x000005;
     private String mCurrentPhotoPath = "";// 图片路径
     public static Point touchpoint;
     /*GPS位置监听 */
@@ -381,6 +388,8 @@ public abstract class BaseActivity extends AppCompatActivity implements LayerSel
             Manifest.permission.ACCESS_COARSE_LOCATION,
             Manifest.permission.ACCESS_NETWORK_STATE,
             Manifest.permission.ACCESS_WIFI_STATE,
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.CAMERA,
     };
 
     @Override
@@ -413,7 +422,7 @@ public abstract class BaseActivity extends AppCompatActivity implements LayerSel
         //featureLayerList.clear();
         //featureLayer = null;
 
-        addShp();
+//        addShp();
     }
 
     public abstract View getParentView();
@@ -1616,12 +1625,14 @@ public abstract class BaseActivity extends AppCompatActivity implements LayerSel
                 BussUtil.setDialogParams(mContext, harmfulDialog, 0.5, 0.8);
                 break;
             case R.id.tv_point:
-                PointDialog pointDialog = new PointDialog(mContext, R.style.Dialog);
-                BussUtil.setDialogParams(mContext, pointDialog, 0.5, 0.8);
+                pointDialog = new PointDialog(BaseActivity.this, R.style.Dialog, this);
+                WindowManager.LayoutParams params = BussUtil.setDialogParams(mContext, pointDialog, 0.5, 0.8);
+                pointDialog.setDialogParams(params);
                 break;
             case R.id.tv_printer:
-                PrinterDialog printerDialog = new PrinterDialog(mContext, R.style.Dialog);
-                BussUtil.setDialogParams(mContext, printerDialog, 0.5, 0.8);
+                printerDialog = new PrinterDialog(BaseActivity.this, R.style.Dialog, this);
+                WindowManager.LayoutParams params1 = BussUtil.setDialogParams(mContext, printerDialog, 0.5, 0.8);
+                printerDialog.setDialogParams(params1);
                 break;
 
             case R.id.share_sbsj:
@@ -1898,6 +1909,24 @@ public abstract class BaseActivity extends AppCompatActivity implements LayerSel
                     personCenterPopup.dismiss();
                 }
                 break;
+
+            case PICK_PHOTO_POINT:
+                if(data != null){
+                    //图片选择成功
+                    picListPoint.clear();
+                    picListPoint = data.getStringArrayListExtra(PhotoPickerActivity.KEY_RESULT);
+                    pointDialog.loadPhoto();
+                }
+                break;
+            case PICK_PHOTO_PRINT:
+                if(data != null){
+                    //图片选择成功
+                    picListPrint.clear();
+                    picListPrint = data.getStringArrayListExtra(PhotoPickerActivity.KEY_RESULT);
+                    printerDialog.loadPhoto();
+                }
+                break;
+
             default:
                 break;
         }
@@ -3733,8 +3762,21 @@ public abstract class BaseActivity extends AppCompatActivity implements LayerSel
     }
 
     @Override
-    public ArrayList<String> getPicList() {
-        return picList;
+    public ArrayList<String> getPicList(int i) {
+        ArrayList<String> list = new ArrayList<>();
+        switch (i) {
+            case PICK_PHOTO:
+                list = picList;
+                break;
+            case PICK_PHOTO_POINT:
+                list = picListPoint;
+                break;
+            case PICK_PHOTO_PRINT:
+                list = picListPrint;
+                break;
+        }
+//        return picList;
+        return list;
     }
 
     @Override

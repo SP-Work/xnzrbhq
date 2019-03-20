@@ -20,353 +20,379 @@
             android:layout_weight="1"
             android:gravity="center|left"
             android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:textColor="#FFFFFF"
-            android:text="样线属性" />
+            android:text="选择样线" />
 
-        <ImageView
-            android:id="@+id/iv_close"
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
             android:layout_gravity="right"
-            android:background="@drawable/background_view_rounded_image"
-            android:contentDescription="@null"
-            android:padding="@dimen/padding_7"
-            android:src="@drawable/ic_close_black_24dp" />
+            android:textColor="@color/white"
+            android:text="添加样线"/>
     </LinearLayout>
 
-    <LinearLayout
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_line"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
+        android:padding="3dp"
         android:layout_marginStart="3dp"
         android:layout_marginEnd="3dp"
-        android:background="@color/white"
-        android:orientation="horizontal">
+        android:background="@color/white"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:text="县名称: "/>
+    <LinearLayout
+        android:id="@+id/ll_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
 
-        <EditText
-            android:id="@+id/et_countyName"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:hint=""/>
-    </LinearLayout>
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginLeft="3sp"
-        android:layout_marginRight="3dp"
-        android:background="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="县名称: "/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
-        android:background="@color/white"
-        android:orientation="horizontal">
+            <EditText
+                android:id="@+id/et_countyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:hint=""/>
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:text="县代码: "/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="3sp"
+            android:layout_marginRight="3dp"
+            android:background="@color/black"/>
 
-        <EditText
-            android:id="@+id/et_countyCode"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:hint=""/>
-    </LinearLayout>
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginLeft="3sp"
-        android:layout_marginRight="3dp"
-        android:background="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="县代码: "/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
-        android:background="@color/white"
-        android:orientation="horizontal">
+            <EditText
+                android:id="@+id/et_countyCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:hint=""/>
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:text="乡镇名称: "/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="3sp"
+            android:layout_marginRight="3dp"
+            android:background="@color/black"/>
 
-        <EditText
-            android:id="@+id/et_townName"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:hint=""/>
-    </LinearLayout>
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginLeft="3sp"
-        android:layout_marginRight="3dp"
-        android:background="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="乡镇名称: "/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
-        android:background="@color/white"
-        android:orientation="horizontal">
+            <EditText
+                android:id="@+id/et_townName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:hint=""/>
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:text="乡镇代码: "/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="3sp"
+            android:layout_marginRight="3dp"
+            android:background="@color/black"/>
 
-        <EditText
-            android:id="@+id/et_townCode"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:hint=""/>
-    </LinearLayout>
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginLeft="3sp"
-        android:layout_marginRight="3dp"
-        android:background="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="乡镇代码: "/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
-        android:background="@color/white"
-        android:orientation="horizontal">
+            <EditText
+                android:id="@+id/et_townCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:hint=""/>
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:text="村名称: "/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="3sp"
+            android:layout_marginRight="3dp"
+            android:background="@color/black"/>
 
-        <EditText
-            android:id="@+id/et_villageName"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:hint=""/>
-    </LinearLayout>
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginLeft="3sp"
-        android:layout_marginRight="3dp"
-        android:background="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="村名称: "/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
-        android:background="@color/white"
-        android:orientation="horizontal">
+            <EditText
+                android:id="@+id/et_villageName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:hint=""/>
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:text="踏查路线编号: "/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="3sp"
+            android:layout_marginRight="3dp"
+            android:background="@color/black"/>
 
-        <EditText
-            android:id="@+id/et_routeNumber"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:hint=""/>
-    </LinearLayout>
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
-        android:background="@color/white"
-        android:visibility="gone"
-        android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="踏查路线编号: "/>
 
-        <EditText
-            android:id="@+id/et_routeNumberDefault"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="4"
-            android:gravity="end"
-            android:textSize="14sp"
-            android:hint=""
-            android:enabled="false"/>
+            <EditText
+                android:id="@+id/et_routeNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:hint=""/>
+        </LinearLayout>
 
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="14sp"
-            android:hint=""/>
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginLeft="3sp"
-        android:layout_marginRight="3dp"
-        android:background="@color/black"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
-        android:background="@color/white"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:text="调查人: "/>
-
-        <EditText
-            android:id="@+id/et_people"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:hint=""
-            android:enabled="false"/>
-    </LinearLayout>
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:orientation="horizontal">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginLeft="3sp"
-        android:layout_marginRight="3dp"
-        android:background="@color/black"/>
+            <EditText
+                android:id="@+id/et_routeNumberDefault"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="end"
+                android:textSize="14sp"
+                android:hint=""
+                android:enabled="false"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
-        android:background="@color/white"
-        android:orientation="horizontal">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:hint=""/>
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:text="调查日期: "/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="3sp"
+            android:layout_marginRight="3dp"
+            android:background="@color/black"/>
 
-        <EditText
-            android:id="@+id/et_date"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:hint=""
-            android:enabled="false"/>
-    </LinearLayout>
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginLeft="3sp"
-        android:layout_marginRight="3dp"
-        android:background="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="调查人: "/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
-        android:background="@color/white"
-        android:visibility="gone"
-        android:orientation="horizontal">
+            <EditText
+                android:id="@+id/et_people"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:hint=""
+                android:enabled="false"/>
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:text="调查长度: "/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="3sp"
+            android:layout_marginRight="3dp"
+            android:background="@color/black"/>
 
-        <EditText
-            android:id="@+id/et_distance"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:hint="（千米）"/>
-    </LinearLayout>
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
 
-    <!--<View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginLeft="3sp"
-        android:layout_marginRight="3dp"
-        android:background="@color/black"/>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="调查日期: "/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
-        android:background="@color/white"
-        android:visibility="gone"
-        android:orientation="horizontal">
+            <EditText
+                android:id="@+id/et_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:hint=""
+                android:enabled="false"/>
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:text="调查面积: "/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="3sp"
+            android:layout_marginRight="3dp"
+            android:background="@color/black"/>
 
-        <EditText
-            android:id="@+id/et_area"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:hint="（亩）"/>
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="调查长度: "/>
+
+            <EditText
+                android:id="@+id/et_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:hint="（千米）"/>
+        </LinearLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="3sp"
+            android:layout_marginRight="3dp"
+            android:background="@color/black"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="调查面积: "/>
+
+            <EditText
+                android:id="@+id/et_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:hint="（亩）"/>
+        </LinearLayout>
     </LinearLayout>
 
     <View

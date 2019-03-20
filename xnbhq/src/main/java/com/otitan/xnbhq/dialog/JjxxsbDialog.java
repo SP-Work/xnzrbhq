@@ -45,6 +45,8 @@ import rx.Observer;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
+import static com.otitan.xnbhq.BaseActivity.PICK_PHOTO;
+
 /**
  * Created by li on 2017/7/6.
  * 紧急信息上报
@@ -149,7 +151,7 @@ public class JjxxsbDialog extends Dialog implements Recyc_imageAdapter.PicOnclic
                     return;
                 }
                 Gson gson = new Gson();
-                for(String pic : picView.getPicList()){
+                for(String pic : picView.getPicList(PICK_PHOTO)){
                     String base = Util.picToString(pic);
                     Image image = new Image();
                     image.setBase(base);
@@ -201,7 +203,7 @@ public class JjxxsbDialog extends Dialog implements Recyc_imageAdapter.PicOnclic
     @Override
     public void setPicOnclick(View item, int position) {
         Intent intent = new Intent(mContext,ImageBrowseActivity.class);
-        intent.putStringArrayListExtra("images",picView.getPicList());
+        intent.putStringArrayListExtra("images",picView.getPicList(PICK_PHOTO));
         intent.putExtra("position",position);
         mContext.startActivity(intent);
     }
@@ -210,7 +212,7 @@ public class JjxxsbDialog extends Dialog implements Recyc_imageAdapter.PicOnclic
      * 跳转到选择图片界面
      */
     public void toSelectPic() {
-        if (picView.getPicList().size() != 0 && picView.getPicList().size() != 9) {
+        if (picView.getPicList(PICK_PHOTO).size() != 0 && picView.getPicList(PICK_PHOTO).size() != 9) {
             AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
             builder.setTitle("重新选择会覆盖之前的图片");
             builder.setMessage("是否重新选择");
@@ -221,7 +223,7 @@ public class JjxxsbDialog extends Dialog implements Recyc_imageAdapter.PicOnclic
                     intent.putExtra(PhotoPickerActivity.EXTRA_SHOW_CAMERA, true);//是否显示相机
                     intent.putExtra(PhotoPickerActivity.EXTRA_SELECT_MODE, PhotoPickerActivity.MODE_MULTI);//选择模式（默认多选模式）
                     intent.putExtra(PhotoPickerActivity.EXTRA_MAX_MUN, PhotoPickerActivity.DEFAULT_NUM);//最大照片张数
-                    mContext.startActivityForResult(intent, mContext.PICK_PHOTO);
+                    mContext.startActivityForResult(intent, PICK_PHOTO);
                 }
             });
             builder.setNegativeButton("取消", new OnClickListener() {
@@ -234,16 +236,16 @@ public class JjxxsbDialog extends Dialog implements Recyc_imageAdapter.PicOnclic
             dialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextSize(16);
             dialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextSize(16);
         }
-        if (picView.getPicList().size() == 9) {
+        if (picView.getPicList(PICK_PHOTO).size() == 9) {
             ToastUtil.setToast(mContext, "照片最多只能选择9张");
             return;
         }
-        if (picView.getPicList().size() == 0) {
+        if (picView.getPicList(PICK_PHOTO).size() == 0) {
             Intent intent = new Intent(mContext, PhotoPickerActivity.class);
             intent.putExtra(PhotoPickerActivity.EXTRA_SHOW_CAMERA, true);//是否显示相机
             intent.putExtra(PhotoPickerActivity.EXTRA_SELECT_MODE, PhotoPickerActivity.MODE_MULTI);//选择模式（默认多选模式）
             intent.putExtra(PhotoPickerActivity.EXTRA_MAX_MUN, PhotoPickerActivity.DEFAULT_NUM);//最大照片张数
-            mContext.startActivityForResult(intent, mContext.PICK_PHOTO);
+            mContext.startActivityForResult(intent, PICK_PHOTO);
         }
     }
 
@@ -253,7 +255,7 @@ public class JjxxsbDialog extends Dialog implements Recyc_imageAdapter.PicOnclic
         LinearLayoutManager layoutManager = new LinearLayoutManager(mContext);
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         recyc.setLayoutManager(layoutManager);
-        Recyc_imageAdapter adapter = new Recyc_imageAdapter(mContext, picView.getPicList(), dialogParams.width/4);
+        Recyc_imageAdapter adapter = new Recyc_imageAdapter(mContext, picView.getPicList(PICK_PHOTO), dialogParams.width/4);
         recyc.setAdapter(adapter);
         adapter.setPicOnclick(dialog);
     }

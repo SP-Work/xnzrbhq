@@ -11,5 +11,6 @@ import java.util.ArrayList;
 
 public interface IPicView extends IBaseView{
 
-    ArrayList<String> getPicList();
+//    ArrayList<String> getPicList();
+    ArrayList<String> getPicList(int i);
 }

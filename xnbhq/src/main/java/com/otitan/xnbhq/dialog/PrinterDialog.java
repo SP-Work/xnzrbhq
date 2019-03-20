@@ -1,17 +1,23 @@
 package com.otitan.xnbhq.dialog;
 
+import android.Manifest;
 import android.app.Dialog;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -19,8 +25,15 @@ import android.widget.Toast;
 
 import com.dothantech.lpapi.LPAPI;
 import com.dothantech.printer.IDzPrinter;
+import com.lling.photopicker.PhotoPickerActivity;
+import com.otitan.xnbhq.BaseActivity;
 import com.otitan.xnbhq.R;
+import com.otitan.xnbhq.activity.ImageBrowseActivity;
+import com.otitan.xnbhq.adapter.Recyc_imageAdapter;
+import com.otitan.xnbhq.mview.IPicView;
 import com.otitan.xnbhq.util.ToastUtil;
+import com.titan.baselibrary.permission.PermissionsActivity;
+import com.titan.baselibrary.permission.PermissionsChecker;
 import com.titan.gzzhjc.MainActivity;
 
 import java.util.ArrayList;
@@ -30,11 +43,14 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+import static com.otitan.xnbhq.BaseActivity.PICK_PHOTO_POINT;
+import static com.otitan.xnbhq.BaseActivity.PICK_PHOTO_PRINT;
+
 /**
  * Created by sp on 2019/3/12.
  * 打印
  */
-public class PrinterDialog extends Dialog {
+public class PrinterDialog extends Dialog implements Recyc_imageAdapter.PicOnclick {
 
     @BindView(R.id.tv_printer)
     TextView mTv_printer;
@@ -43,7 +59,14 @@ public class PrinterDialog extends Dialog {
     @BindView(R.id.rv_pic)
     RecyclerView mRv_pic;
 
-    private Context mContext;
+    private BaseActivity mContext;
+    private IPicView picView;
+
+    private static WindowManager.LayoutParams dialogParams;
+
+    static final String[] PERMISSIONS = new String[]{
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+    };
 
     private final Handler mHandler = new Handler();
 
@@ -52,9 +75,10 @@ public class PrinterDialog extends Dialog {
     // 上次连接成功的设备对象
     private IDzPrinter.PrinterAddress mPrinterAddress = null;
 
-    public PrinterDialog(@NonNull Context context, int themeResId) {
+    public PrinterDialog(@NonNull BaseActivity context, int themeResId, IPicView baseView) {
         super(context, themeResId);
         mContext = context;
+        picView = baseView;
     }
 
     @Override
@@ -63,6 +87,10 @@ public class PrinterDialog extends Dialog {
         setContentView(R.layout.dialog_printer);
 
         ButterKnife.bind(this);
+
+        if (new PermissionsChecker(mContext).lacksPermissions(PERMISSIONS)) {
+            PermissionsActivity.startActivityForResult(mContext, PermissionsActivity.PERMISSIONS_REQUEST_CODE, PERMISSIONS);
+        }
 
         initView();
     }
@@ -84,7 +112,7 @@ public class PrinterDialog extends Dialog {
         }
     }
 
-    @OnClick({R.id.iv_close, R.id.tv_printer, R.id.tv_text, R.id.tv_determine, R.id.tv_cancel})
+    @OnClick({R.id.iv_close, R.id.tv_printer, R.id.tv_text, R.id.tv_pic, R.id.tv_determine, R.id.tv_cancel})
     public void myClick(View view) {
         switch (view.getId()) {
             case R.id.iv_close:
@@ -115,6 +143,9 @@ public class PrinterDialog extends Dialog {
                     mEt_text.setVisibility(View.GONE);
                 }
                 break;*/
+            case R.id.tv_pic:
+                toSelectPic();
+                break;
             case R.id.tv_determine:
                 mEt_text.setVisibility(View.VISIBLE);
                 String text = mEt_text.getText().toString().trim();
@@ -123,10 +154,23 @@ public class PrinterDialog extends Dialog {
                 } else if (isPrinterConnected()) {
                     textPrint(text);
                 }
+                printPic();
                 break;
             case R.id.tv_cancel:
                 dismiss();
                 break;
+        }
+    }
+
+    private void printPic() {
+        ArrayList<String> picList = picView.getPicList(PICK_PHOTO_PRINT);
+        String path = picList.get(0);
+        Bitmap bitmap = BitmapFactory.decodeFile(path);
+        if (bitmap != null) {
+            Bundle param = new Bundle();
+            param.putInt(IDzPrinter.PrintParamName.PRINT_COPIES, 1);
+            param.putInt(IDzPrinter.PrintParamName.PRINT_DIRECTION, 0);
+            api.printBitmap(bitmap, param);
         }
     }
 
@@ -313,5 +357,65 @@ public class PrinterDialog extends Dialog {
             // 连接打印机失败，刷新界面提示
             mTv_printer.setText("连接打印机失败");
         }
+    }
+
+    private void toSelectPic() {
+        if (picView.getPicList(PICK_PHOTO_PRINT).size() != 0 && picView.getPicList(PICK_PHOTO_PRINT).size() != 9) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
+            builder.setTitle("重新选择会覆盖之前的图片");
+            builder.setMessage("是否重新选择");
+            builder.setCancelable(true);
+            builder.setPositiveButton("重新选择", new OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                    Intent intent = new Intent(mContext, PhotoPickerActivity.class);
+                    intent.putExtra(PhotoPickerActivity.EXTRA_SHOW_CAMERA, true);//是否显示相机
+                    intent.putExtra(PhotoPickerActivity.EXTRA_SELECT_MODE, PhotoPickerActivity.MODE_MULTI);//选择模式（默认多选模式）
+                    intent.putExtra(PhotoPickerActivity.EXTRA_MAX_MUN, PhotoPickerActivity.DEFAULT_NUM);//最大照片张数
+                    mContext.startActivityForResult(intent, PICK_PHOTO_PRINT);
+                }
+            });
+            builder.setNegativeButton("取消", new OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                    dialog.cancel();
+                }
+            });
+            AlertDialog dialog = builder.create();
+            dialog.show();
+            dialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextSize(16);
+            dialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextSize(16);
+        }
+        if (picView.getPicList(PICK_PHOTO_PRINT).size() == 9) {
+            com.titan.baselibrary.util.ToastUtil.setToast(mContext, "照片最多只能选择9张");
+            return;
+        }
+        if (picView.getPicList(PICK_PHOTO_PRINT).size() == 0) {
+            Intent intent = new Intent(mContext, PhotoPickerActivity.class);
+            intent.putExtra(PhotoPickerActivity.EXTRA_SHOW_CAMERA, true);//是否显示相机
+            intent.putExtra(PhotoPickerActivity.EXTRA_SELECT_MODE, PhotoPickerActivity.MODE_MULTI);//选择模式（默认多选模式）
+            intent.putExtra(PhotoPickerActivity.EXTRA_MAX_MUN, PhotoPickerActivity.DEFAULT_NUM);//最大照片张数
+            mContext.startActivityForResult(intent, mContext.PICK_PHOTO_PRINT);
+        }
+    }
+
+    /**选择图片后加载图片*/
+    public void loadPhoto() {
+        LinearLayoutManager layoutManager = new LinearLayoutManager(mContext);
+        layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+        mRv_pic.setLayoutManager(layoutManager);
+        Recyc_imageAdapter adapter = new Recyc_imageAdapter(mContext, picView.getPicList(PICK_PHOTO_PRINT), dialogParams.width/4);
+        mRv_pic.setAdapter(adapter);
+        adapter.setPicOnclick(this);
+    }
+
+    @Override
+    public void setPicOnclick(View item, int position) {
+        Intent intent = new Intent(mContext, ImageBrowseActivity.class);
+        intent.putStringArrayListExtra("images", picView.getPicList(PICK_PHOTO_PRINT));
+        intent.putExtra("position", position);
+        mContext.startActivity(intent);
+    }
+
+    public void setDialogParams(WindowManager.LayoutParams dialogParams) {
+        PrinterDialog.dialogParams = dialogParams;
     }
 }

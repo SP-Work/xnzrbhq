@@ -59,7 +59,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="left|center"
-                android:text="基础图"
+                android:text="影像图"
                 android:textColor="@color/balck" />
 
             <ImageView
@@ -97,7 +97,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="left|center"
-                android:text="影像图"
+                android:text="基础图"
                 android:textColor="@color/balck" />
 
             <ImageView

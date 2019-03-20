@@ -13,7 +13,7 @@ public final class R {
     }
     public static final class id {
         public static final int down_cancle_btn = 0x7f0900e1;
-        public static final int update_progress = 0x7f090558;
+        public static final int update_progress = 0x7f090562;
     }
     public static final class layout {
         public static final int dialog_download_apk = 0x7f0b0062;
